@@ -2,6 +2,7 @@
 title: "Gender and Racial/Ethnic Disparities of Early-onset Colorectal Cancer by Anatomical Sites, Histological Types, and Disease Stages in the United States during 2001-2019"
 collection: publications
 category: manuscripts
+permalink: /publication/GR
 date: 2024-10-03
 excerpt: 'This paper is pending publication.'
 ---
