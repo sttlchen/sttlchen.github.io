@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Curriculums"
+title: "Courses"
 permalink: /cr/
 author_profile: true
 redirect_from:
@@ -10,71 +10,10 @@ redirect_from:
 {% include base_path %}
 # Courses
 
-## Calculus
-**MATH221,222,234**  
-
-## Intro to Prob & Math Stat II
-**MATH310**  
-
-## Elem Matrix & Linear Algebra
-**MATH340**  
-
-## Undergraduate Research - MXM
-**MATH390**  
-
-## Theory of Single Variable Cal
-**MATH421**  
-
-## Intro-Theory of Probability
-**MATH431**  
-
-## Intro-Combinatorics
-**MATH475**  
-
-## Analysis I
-**MATH521**  
-
-## Modern Algebra
-**MATH541**  
-
-## Complex Analysis
-**MATH623**  
-
-## Intro-Stochastic Processes
-**MATH632**  
-
-## R for Statistics I
-**STAT303**  
-
-## Applied Regression Analysis
-**STAT333**  
-
-## Introduction to Time Series
-**STAT349**  
-
-## Intro Applied Stats-Life Sci
-**STAT371**  
-
-## 	Stat Expermntl Design
-**STAT424**  
-
-## Machine Learning
-**STAT451**  
-
-## Programming I
-**COMP SCI200**  
-
-## Data Sci Programming I
-**COMP SCI220**  
-
-## Mtrx Mthds in Machine Learnin
-**COMP SCI532**  
-
-## General Physics
+## Calculus, Intro to Prob & Math Stat II, Elem Matrix & Linear Algebra, Undergraduate Research - MXM, Theory of Single Variable Cal, Intro-Theory of Probability, Intro-Combinatorics, Analysis I, Modern Algebra, Complex Analysis, Intro-Stochastic Processes, R for Statistics I, Applied Regression Analysis, Introduction to Time Series, Intro Applied Stats-Life Sci, Stat Expermntl Design, Machine Learning, Programming I, Data Sci Programming I, Mtrx Mthds in Machine Learnin,  General Physics, General Chemistry I&II, Animal Biology&Lab
+**MATH221,222,234,310,340,390,421,431,475,521,541,623,632**
+**STAT303,333,349,371,424,451**  
+**COMP SCI200,220,532**  
 **PHYSICS103&104**  
-
-## General Chemistry I&II
-**CHEM103&104**  
-
-## Animal Biology&Lab
+**CHEM103&104**
 **ZOOLOGY101&102**  
