@@ -10,7 +10,7 @@
 locale                   : "en-US"
 title                    : "Steven Tianle Chen / Home"
 title_separator          : "-"
-name                     : &name "Steven Tianle Chen(陈天乐)"
+name                     : &name "Steven Tianle Chen\n(陈天乐)"
 description              : &description "Math&Stats Senior@UW-Madison"
 url                      : https://StBadger02.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
