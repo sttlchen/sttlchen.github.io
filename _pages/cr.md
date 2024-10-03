@@ -4,7 +4,7 @@ title: "Curriculums"
 permalink: /cr/
 author_profile: true
 redirect_from:
-  - /resume
+  - /cr
 ---
 
 {% include base_path %}
