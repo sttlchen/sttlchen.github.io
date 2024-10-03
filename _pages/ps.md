@@ -1,3 +1,14 @@
+---
+layout: archive
+title: "CV"
+permalink: /cv/
+author_profile: true
+redirect_from:
+  - /ps
+---
+
+{% include base_path %}
+
 My academic journey has been driven by a deep interest in applied mathematics, with a particular focus on probability theory and stochastic processes. Throughout my undergraduate studies at the University of Wisconsin-Madison, I have sought opportunities to apply mathematical techniques to solve real-world problems, particularly in areas of statistics, data science, and mathematical modeling.
 
 One of the highlights of my research experience has been my role as a research assistant in a project investigating Gender and Racial/Ethnic Disparities of Early-onset Colorectal Cancer. In this project, I utilized my statistical and computational skills to analyze large datasets from SEER*Stat, performing detailed statistical analyses to uncover patterns in cancer prevalence across various demographics. This work reinforced my ability to work with complex, real-world data and to apply probabilistic reasoning to understand data distributions and trends. The use of tools like SAS for p-value analysis also highlighted the crucial role that statistical theory plays in driving meaningful conclusions in applied fields like healthcare.
