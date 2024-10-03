@@ -11,26 +11,18 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* B.S. Mathematics & Statistics, University of Wisconsin-Madison(In progress), 2024
 
-Work experience
+Research & Academic Projects
 ======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* Gender and Racial/Ethnic Disparities of Early-onset Colorectal Cancer by Anatomical Sites, Histological Types, and Disease Stages in the United States during 2001-2019
+  *Research Assistant supervised by Shihua Wang from Ohio State University
+  *Extracted and prepared data from SEER*Stat for analysis, with a focus on early-onset colorectal cancer
+  *Conducted preliminary statistical calculations, including mean and variance, to understand data distributions
+  *Developed graphics to detect critical patterns and trends
+  *Utilized SAS software for statistical analysis, evaluating data using p-values
+  *Helped identify crucial areas for further research and discussion in thesis development
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
   
 Skills
 ======
