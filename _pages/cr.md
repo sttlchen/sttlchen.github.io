@@ -10,50 +10,71 @@ redirect_from:
 {% include base_path %}
 # Courses
 
-## Abstract Algebra
-**MATH541**  
-Associated with University of Wisconsin-Madison
+## Calculus
+**MATH221,222,234**  
 
-## Combinatorics
-**MATH475**  
-Associated with University of Wisconsin-Madison
-
-## Computer Programming (Java)
-**CS200**  
-Associated with University of Wisconsin-Madison
-
-## Data Science Programming (Python)
-**CS220**  
-Associated with University of Wisconsin-Madison
-
-## Intro to Probability Theory
-**MATH431**  
-Associated with University of Wisconsin-Madison
-
-## Introduction to Statistics for Life Sciences
-**STAT371**  
-Associated with University of Wisconsin-Madison
-
-## Linear Algebra
-**MATH340**  
-Associated with University of Wisconsin-Madison
-
-## Mathematical Statistics II
+## Intro to Prob & Math Stat II
 **MATH310**  
-Associated with University of Wisconsin-Madison
 
-## Monster & Machines
-**ART HIST 430**  
-Associated with University of Wisconsin-Madison
+## Elem Matrix & Linear Algebra
+**MATH340**  
 
-## Multivariable Calculus
-**MATH234**  
-Associated with University of Wisconsin-Madison
+## Undergraduate Research - MXM
+**MATH390**  
 
-## Real Analysis
+## Theory of Single Variable Cal
+**MATH421**  
+
+## Intro-Theory of Probability
+**MATH431**  
+
+## Intro-Combinatorics
+**MATH475**  
+
+## Analysis I
 **MATH521**  
-Associated with University of Wisconsin-Madison
 
-## Statistical Experimental Design
+## Modern Algebra
+**MATH541**  
+
+## Complex Analysis
+**MATH623**  
+
+## Intro-Stochastic Processes
+**MATH632**  
+
+## R for Statistics I
+**STAT303**  
+
+## Applied Regression Analysis
+**STAT333**  
+
+## Introduction to Time Series
+**STAT349**  
+
+## Intro Applied Stats-Life Sci
+**STAT371**  
+
+## 	Stat Expermntl Design
 **STAT424**  
-Associated with University of Wisconsin-Madison
+
+## Machine Learning
+**STAT451**  
+
+## Programming I
+**COMP SCI200**  
+
+## Data Sci Programming I
+**COMP SCI220**  
+
+## Mtrx Mthds in Machine Learnin
+**COMP SCI532**  
+
+## General Physics
+**PHYSICS103&104**  
+
+## General Chemistry I&II
+**CHEM103&104**  
+
+## Animal Biology&Lab
+**ZOOLOGY101&102**  
