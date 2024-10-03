@@ -1,3 +1,13 @@
+---
+layout: archive
+title: "Curriculums"
+permalink: /cr/
+author_profile: true
+redirect_from:
+  - /resume
+---
+
+{% include base_path %}
 # Courses
 
 ## Abstract Algebra
