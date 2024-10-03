@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "PS"
+title: "Personal Statement"
 permalink: /ps/
 author_profile: true
 redirect_from:
