@@ -4,7 +4,10 @@
 # links. Removing a link prevents it from showing in the header, but does not
 # prevent it from being included in the site.
 
-main:
+main:  
+  - title: "CV"
+    url: /cv/
+    
   - title: "Publications"
     url: /publications/
 
@@ -20,8 +23,8 @@ main:
   #- title: "Blog Posts"
     #url: /year-archive/
     
-  - title: "CV"
-    url: /cv/
+  - title: "Curriculums"
+    url: /cr/
     
   #- title: "Guide"
     #url: /markdown/
