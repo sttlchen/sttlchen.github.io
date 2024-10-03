@@ -11,64 +11,108 @@ redirect_from:
 
 ## Education
 ======
-* B.S. Mathematics & Statistics, University of Wisconsin-Madison (In progress), 2024
+* **B.S. Mathematics & Statistics**, University of Wisconsin-Madison (In progress), 2024  
+  *GPA*: 3.9/4.0  
+  *Honors*: Dean’s List for 4 Semesters, Successful Participant Award for COMAP 2024 (Advisor: Saverio Spagnolie)
 
 ## Research & Academic Projects
 ======
 * **Gender and Racial/Ethnic Disparities of Early-onset Colorectal Cancer by Anatomical Sites, Histological Types, and Disease Stages in the United States during 2001-2019**  
   * Research Assistant supervised by Shihua Wang from Ohio State University  
-  * Extracted and prepared data from SEER*Stat for analysis, with a focus on early-onset colorectal cancer  
-  * Conducted preliminary statistical calculations, including mean and variance, to understand data distributions  
+  * June 2022 - August 2023 (Remote)  
+  * Extracted and prepared data from SEER*Stat for analysis, focusing on early-onset colorectal cancer  
+  * Conducted preliminary statistical calculations (mean, variance) to understand data distributions  
   * Developed graphics to detect critical patterns and trends  
   * Utilized SAS software for statistical analysis, evaluating data using p-values  
-  * Helped identify crucial areas for further research and discussion in thesis development  
+  * Identified crucial areas for further research and discussion in thesis development  
 
 * **Regression Model Design for Human Bodyfat Prediction**  
   * Group Project supervised by Prof. Hyunseung Kang  
-  * Imported dataset into RStudio and detected outliers using Cook’s distance, leverage point, and IQR analysis  
+  * September 2023 – November 2023 (Madison, WI)  
+  * Imported dataset into RStudio, detected outliers using Cook’s distance, leverage points, and IQR analysis  
   * Assessed dataset normality, homoskedasticity, and linearity using QQ plot and residual plot  
   * Explored regression models including Simple Linear Regression (SLR) and Multiple Linear Regressions (MLRs)  
+  * Performed F-tests to evaluate and compare regression models  
   * Achieved a high-performing final model with an R-square exceeding 0.7 and RMSE of 4.08
 
 * **Numerical Study of Kakeya Maximal Inequalities**  
   * Research Project supervised by Prof. Terrence Harris and Graduate Student Kaiyi Huang  
-  * Conducted an in-depth review of the Kakeya maximal function conjecture  
+  * September 2024 – Present (Madison, WI)  
+  * Conducted in-depth review of the Kakeya maximal function conjecture, focusing on both 2D and 3D scenarios  
   * Designed and implemented numerical simulations for 3D tubes using spatial hashing techniques  
-  * Developed strategies to test the conjecture's robustness, employing optimization algorithms  
-  * Utilized MATLAB and Python libraries for complex geometric computations  
+  * Adapted methodologies for 2D cases to refine algorithms based on resolved conjecture cases  
+  * Utilized MATLAB, Python (NumPy, SciPy, Matplotlib), and CGAL for complex geometric computations  
+  * Documented and tested all methods to ensure simulation accuracy against known theoretical outcomes  
+
+* **Algebra/Probability (Directed Reading Program)**  
+  * February 2024 – May 2024 (Madison, WI)  
+  * Explored advanced mathematical concepts with a focus on the Free Central Limit Theorem (FCLT)  
+  * Presented findings on FCLT in final program presentations  
 
 * **Stars and Planets Data Analysis**  
   * Group Project  
-  * Used Python and Jupyter Notebook to process data and handle missing values  
-  * Created graphs for data visualization and analysis of astronomical data  
-  * Applied astrophysical formulas to identify habitable planets  
+  * November 2023 (Madison, WI)  
+  * Used Python and Jupyter Notebook to process JSON and CSV data into structured data frames  
+  * Created graphs (scatter plots, pie charts) for data visualization and analysis of astronomical data  
+  * Applied astrophysical formulas to identify potential habitable planets and predict star/planet characteristics  
 
 * **Wordle Game**  
-  * Individual Project  
+  * May 2022 (Madison, WI)  
   * Developed a beginner-level Wordle game using Java in IntelliJ  
-  * Implemented error-handling mechanisms and used ArrayList management
+  * Implemented ArrayList management, pseudorandom number generation, and error-handling mechanisms  
 
 ## Skills
 ======
-* Python  
-* R/RStudio  
-* SAS  
-  * Sub-skill 2.1  
-  * Sub-skill 2.2  
-  * Sub-skill 2.3  
-* LaTex
+* **Programming Languages**: Python, R/RStudio, SAS, SQL, LaTex, Microsoft Office, Java, VB/VBScript, HTML  
+* **Technical Skills**: Statistical modeling, Data analysis, Machine learning, Data visualization (Matplotlib), LaTeX, Excel  
+* **Languages**: English (Fluent), Chinese (Native), German (Beginner)  
 
 ## Publications
 ======
-<ul>{% for post in site.publications reversed %}
-  {% include archive-single-cv.html %}
-{% endfor %}</ul>
+* **Gender and Racial/Ethnic Disparities of Early-onset Colorectal Cancer by Anatomical Sites, Histological Types, and Disease Stages in the United States during 2001-2019**
+  * Pending publication.
+
+## Professional Experience
+======
+* **Outlier AI**  
+  * Undergraduate Intern  
+  * April 2024 - Present (Remote)  
+  * Evaluated and modified responses generated by AI models for Math problems  
+  * Used LaTeX and Math-solving skills to optimize AI model responses  
+
+* **China Mobile Sichuan Corp.**  
+  * Marketing Analyst  
+  * May 2023 - June 2023 (Chengdu, China)  
+  * Analyzed carrier service marketing data using advanced Excel techniques  
+  * Conducted data analysis to identify market trends, customer preferences, and pricing strategies  
+  * Collaborated with cross-functional teams to implement data-driven price adjustments and promotional campaigns  
+
+## Extracurricular Activities
+======
+* **Burkard Lab, UW-Madison Department of Medicine**  
+  * Lab Assistant  
+  * January 2023 - May 2023 (Madison, WI)  
+  * Supported lab operations, including autoclaving and material restocking  
+  * Gained hands-on experience in lab techniques related to breast cancer research  
+
+* **UnityPoint-Meriter**  
+  * Clinical Shadowing Assistant  
+  * October 2022 - December 2022 (Madison, WI)  
+  * Shadowed a UW-Health professor specializing in colon & rectum surgery  
+  * Participated in clinical settings, observing patient consultations and assisting with communication  
+
+* **McBurney Disability Resource Center, UW-Madison**  
+  * Notetaker  
+  * June 2022 - July 2022 (Madison, WI)  
+  * Provided notetaking support for the History 130 course, assisting students with learning disabilities  
 
 ## Talks
 ======
-<ul>{% for post in site.talks reversed %}
-  {% include archive-single-talk-cv.html %}
-{% endfor %}</ul>
+* **Free Central Limit Theorem, Semicircular Element, and Dyck Paths**
+  * [https://wiki.math.wisc.edu/index.php/Directed_Reading_Program_Spring_2024]
 
-## Teaching
+## Certifications
 ======
+* **Basic Life Support Provider (American Heart Association)**  
+  * Certification period: December 2022 - December 2024  
+  * eCard Code: 235411670163
