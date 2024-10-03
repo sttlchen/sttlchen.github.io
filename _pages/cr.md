@@ -8,8 +8,6 @@ redirect_from:
 ---
 
 {% include base_path %}
-# Courses
-
 ## Calculus, Intro to Prob & Math Stat II, Elem Matrix & Linear Algebra, Undergraduate Research - MXM
 
 ## Theory of Single Variable Cal, Intro-Theory of Probability, Intro-Combinatorics, Analysis I, Modern Algebra, Complex Analysis, Intro-Stochastic Processes
