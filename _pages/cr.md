@@ -8,11 +8,15 @@ redirect_from:
 ---
 
 {% include base_path %}
-## Calculus, Intro to Prob & Math Stat II, Elem Matrix & Linear Algebra, Undergraduate Research - MXM
+## Calculus, Intro to Prob & Math Stat II, Elem Matrix & Linear Algebra
 
-## Theory of Single Variable Cal, Intro-Theory of Probability, Intro-Combinatorics, Analysis I, Modern Algebra, Complex Analysis, Intro-Stochastic Processes
+## Undergraduate Research - MXM, Theory of Single Variable Cal, Intro-Theory of Probability
 
-## R for Statistics I, Applied Regression Analysis, Introduction to Time Series, Intro Applied Stats-Life Sci, Stat Expermntl Design, Machine Learning
+## Intro-Combinatorics, Analysis I, Modern Algebra, Complex Analysis, Intro-Stochastic Processes
+
+## R for Statistics I, Applied Regression Analysis, Introduction to Time Series
+
+## Intro Applied Stats-Life Sci, Stat Expermntl Design, Machine Learning
 
 ## Programming I, Data Sci Programming I, Mtrx Mthds in Machine Learnin,  General Physics, General Chemistry I&II, Animal Biology&Lab
 
