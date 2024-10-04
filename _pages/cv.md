@@ -11,9 +11,9 @@ redirect_from:
 [Download CV Here](https://github.com/sttlchen/sttlchen.github.io/raw/refs/heads/master/_pages/CV-Tianle%20Chen-9.28.24.docx)
 ## Education
 ======
-* **B.S. Mathematics & Statistics**, University of Wisconsin-Madison (In progress), 2024  
+* **B.S. [Mathematics](https://math.wisc.edu/) & [Statistics](https://stat.wisc.edu/)**, [University of Wisconsin-Madison](https://www.wisc.edu/) (In progress), 2024  
   *GPA*: 3.9/4.0  
-  *Honors*: Dean’s List for 4 Semesters, Successful Participant Award for COMAP 2024 (Advisor: Saverio Spagnolie)
+  *Honors*: Dean’s List for 4 Semesters, Successful Participant Award for COMAP 2024 (Advisor: [Saverio Spagnolie](https://people.math.wisc.edu/~spagnolie/))
 
 ## Research & Academic Projects
 ======
@@ -27,7 +27,7 @@ redirect_from:
   * Identified crucial areas for further research and discussion in thesis development  
 
 * **Regression Model Design for Human Bodyfat Prediction**  
-  * Group Project supervised by Prof. Hyunseung Kang  
+  * Group Project supervised by [Prof. Hyunseung Kang](https://pages.cs.wisc.edu/~hyunseung/)  
   * September 2023 – November 2023 (Madison, WI)  
   * Imported dataset into RStudio, detected outliers using Cook’s distance, leverage points, and IQR analysis  
   * Assessed dataset normality, homoskedasticity, and linearity using QQ plot and residual plot  
@@ -36,7 +36,7 @@ redirect_from:
   * Achieved a high-performing final model with an R-square exceeding 0.7 and RMSE of 4.08
 
 * **Numerical Study of Kakeya Maximal Inequalities**  
-  * Research Project supervised by Prof. Terrence Harris and Graduate Student Kaiyi Huang  
+  * Research Project supervised by [Prof. Terrence Harris](https://sites.google.com/view/terryljh/) and Graduate Student Kaiyi Huang  
   * September 2024 – Present (Madison, WI)  
   * Conducted in-depth review of the Kakeya maximal function conjecture, focusing on both 2D and 3D scenarios  
   * Designed and implemented numerical simulations for 3D tubes using spatial hashing techniques  
@@ -44,7 +44,7 @@ redirect_from:
   * Utilized MATLAB, Python (NumPy, SciPy, Matplotlib), and CGAL for complex geometric computations  
   * Documented and tested all methods to ensure simulation accuracy against known theoretical outcomes  
 
-* **Algebra/Probability (Directed Reading Program)**  
+* **Algebra/Probability ([Directed Reading Program](https://wiki.math.wisc.edu/index.php/Directed_Reading_Program))**  
   * February 2024 – May 2024 (Madison, WI)  
   * Explored advanced mathematical concepts with a focus on the Free Central Limit Theorem (FCLT)  
   * Presented findings on FCLT in final program presentations  
@@ -89,19 +89,19 @@ redirect_from:
 
 ## Extracurricular Activities
 ======
-* **Burkard Lab, UW-Madison Department of Medicine**  
+* **[Burkard](https://www.medicine.wisc.edu/directory/burkard_mark) Lab, UW-Madison Department of Medicine**  
   * Lab Assistant  
   * January 2023 - May 2023 (Madison, WI)  
   * Supported lab operations, including autoclaving and material restocking  
   * Gained hands-on experience in lab techniques related to breast cancer research  
 
-* **UnityPoint-Meriter**  
+* **[UnityPoint-Meriter](https://www.unitypoint.org/locations/unitypoint-health---meriter-hospital)**  
   * Clinical Shadowing Assistant  
   * October 2022 - December 2022 (Madison, WI)  
   * Shadowed a UW-Health professor specializing in colon & rectum surgery  
   * Participated in clinical settings, observing patient consultations and assisting with communication  
 
-* **McBurney Disability Resource Center, UW-Madison**  
+* **[McBurney Disability Resource Center, UW-Madison](https://mcburney.wisc.edu/)**  
   * Notetaker  
   * June 2022 - July 2022 (Madison, WI)  
   * Provided notetaking support for the History 130 course, assisting students with learning disabilities  
@@ -115,4 +115,4 @@ redirect_from:
 ======
 * **Basic Life Support Provider (American Heart Association)**  
   * Certification period: December 2022 - December 2024  
-  * eCard Code: 235411670163
+  * eCard Code: [235411670163](https://ecards.heart.org/student/eCards?cid=76D42F85-A3E3-4240-856F-2C5AACA516F5)
