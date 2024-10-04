@@ -9,8 +9,6 @@ redirect_from:
 
 Welcome!
 ======
-As a senior at UW-Madison majoring in both Mathematics and Statistics with a 3.9 GPA, I have developed a strong passion for applying mathematical theory and statistical analysis to solve complex problems. My work at the Madison Experimental Mathematics ([MXM](https://mxm.math.wisc.edu/)) Lab, where I focused on the Kakeya maximal function conjecture, allowed me to explore advanced mathematical concepts and computational techniques, using tools like MATLAB and Python. At the same time, my research on gender and racial disparities in early-onset colorectal cancer highlighted the real-world applications of statistical analysis, utilizing SEER*Stat and SAS.
+I am a senior at the University of Wisconsin-Madison double majoring in Mathematics and Statistics with an anticipated graduation in Fall 2024. I am interested in research in Applied Mathematics and am seeking hands-on experience in the field for Spring 2025. 
 
-This blend of mathematics and statistics has equipped me with a well-rounded skill set, including mathematical modeling, data analysis, and computational algorithms. I am particularly drawn to the intersection of these disciplines and their potential to address real-world challenges. My academic experiences have inspired me to delve deeper into mathematical modeling, computational techniques, and statistical methodologies, with the goal of contributing to research and innovation in fields like health care and scientific computing.
-
-By continuing to explore the integration of math and statistics, I aim to push the boundaries of both disciplines and apply them to create impactful solutions in academic and practical settings.
+I am applying to Applied Mathematics and Statistics graduate programs for Fall 2025.
