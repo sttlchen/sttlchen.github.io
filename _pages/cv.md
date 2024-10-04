@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: [CV](www.google.com)
+title: "CV"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 {% include base_path %}
-
+[Downloadable CV Here](https://github.com/sttlchen/sttlchen.github.io/blob/master/_pages/CV-Tianle%20Chen-9.28.24.docx)
 ## Education
 ======
 * **B.S. Mathematics & Statistics**, University of Wisconsin-Madison (In progress), 2024  
