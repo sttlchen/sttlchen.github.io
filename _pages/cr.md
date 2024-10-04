@@ -4,7 +4,7 @@ title: "Courses"
 permalink: /cr/
 author_profile: true
 redirect_from:
-  - /cr
+- /cr
 ---
 
 {% include base_path %}
@@ -22,12 +22,6 @@ redirect_from:
 
 **MATH221,222,234,310,340,390,421,431,475,521,541,623,632**
 
-**STAT303,333,349,371,424,451**  
+**STAT303,333,349,371,424,451,COMP SCI200,220,532**  
 
-**COMP SCI200,220,532**  
-
-**PHYSICS103&104**  
-
-**CHEM103&104**
-
-**ZOOLOGY101&102**  
+**PHYSICS103&104,CHEM103&104,ZOOLOGY101&102**  
