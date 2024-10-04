@@ -109,7 +109,7 @@ redirect_from:
 ## Talks
 ======
 * **Free Central Limit Theorem, Semicircular Element, and Dyck Paths**
-  * [https://wiki.math.wisc.edu/index.php/Directed_Reading_Program_Spring_2024]
+  * [Link](https://wiki.math.wisc.edu/index.php/Directed_Reading_Program_Spring_2024)
 
 ## Certifications
 ======
