@@ -1,14 +1,14 @@
 ---
 permalink: /
-title: ""
+title: "Welcome"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-Welcome!
+Hello!/你好！/Guten Tag!
 ======
-I am a senior at the University of Wisconsin-Madison double majoring in Mathematics and Statistics with an anticipated graduation in Fall 2024. I am interested in research in Applied Mathematics and am seeking hands-on experience in the field for Spring 2025. 
+I am a senior Mathematics and Statistics student at UW-Madison with an anticipated graduation in Fall 2024. My research interest is Applied Mathematics with statistical theories. I am seeking research experience in the field for Spring 2025. 
 
 I am applying to Applied Mathematics and Statistics graduate programs for Fall 2025.
