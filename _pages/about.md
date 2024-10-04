@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Hello!/你好！/Guten Tag!
+Hello!/Guten Tag!/你好！
 ======
 I am a senior Mathematics and Statistics student at UW-Madison with an anticipated graduation in Fall 2024. My research interest is Applied Mathematics with statistical theories. I am seeking research experience in the field for Spring 2025. 
 
