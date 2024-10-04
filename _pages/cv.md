@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 {% include base_path %}
-[Download CV Here](/files/CV-Tianle%20Chen-9.28.24.pdf)
+[Download CV Here](/files/CV-Tianle%20Chen-10.04.24.pdf)
 ## Education
 ======
 * **B.S. [Mathematics](https://math.wisc.edu/) & [Statistics](https://stat.wisc.edu/)**, [University of Wisconsin-Madison](https://www.wisc.edu/) (In progress), 2024  
