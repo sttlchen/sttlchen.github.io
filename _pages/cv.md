@@ -13,7 +13,7 @@ redirect_from:
 ======
 * **B.S. [Mathematics](https://math.wisc.edu/) & [Statistics](https://stat.wisc.edu/)**, [University of Wisconsin-Madison](https://www.wisc.edu/) (In progress), 2024  
   *GPA*: 3.9/4.0  
-  *Honors*: Dean’s List for 4 Semesters, Successful Participant Award for COMAP 2024 (Advisor: [Saverio Spagnolie](https://people.math.wisc.edu/~spagnolie/))
+  *Honors*: Dean’s List for 4 Semesters, [Successful Participant Award for COMAP 2024](https://people.math.wisc.edu/~spagnolie/COMAP/) (Advisor: [Saverio Spagnolie](https://people.math.wisc.edu/~spagnolie/),[Amy Cochran](https://sites.google.com/site/amylouisecochran/))
 
 ## Research & Academic Projects
 ======
