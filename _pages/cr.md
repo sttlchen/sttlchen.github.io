@@ -14,19 +14,20 @@ redirect_from:
    - MATH 221: Calculus & Analytic Geometry I
    - MATH 222: Calculus & Analytic Geometry II
    - MATH 234: Calculus--Functions of Several Variables
-   - MATH 310: Introduction to Probability & Mathematical Statistics II
    - MATH 421: Theory of Single Variable Calculus
    - MATH 521: Analysis I
-   - MATH 431: Introduction to the Theory of Probability
-   - MATH 475: Introduction to Combinatorics
    - MATH 623: Complex Analysis
-   - MATH 632: Introduction to Stochastic Processes
+2. **Probability**
+   - MATH/STAT 310: Introduction to Probability & Mathematical Statistics II
+   - MATH/STAT 431: Introduction to the Theory of Probability
+   - MATH/STAT 475: Introduction to Combinatorics
+   - MATH/STAT 632: Introduction to Stochastic Processes
 
-2. **Algebra**
+3. **Algebra**
    - MATH 340: Elementary Matrix & Linear Algebra
    - MATH 541: Modern Algebra
 
-3. **Research**
+4. **Research**
    - MATH 390: Undergraduate Research - MXM
 
 ## **Statistics**
