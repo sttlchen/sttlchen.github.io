@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Courses"
+title: "Academic Coursework Overview"
 permalink: /cr/
 author_profile: true
 redirect_from:
@@ -8,8 +8,6 @@ redirect_from:
 ---
 
 {% include base_path %}
-# Academic Coursework Overview
-
 ## **Mathematics**
 
 1. **Calculus & Analysis**
