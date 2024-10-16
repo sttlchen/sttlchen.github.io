@@ -6,7 +6,7 @@
 
 main:  
   - title: "Resume"
-    url: /cv/
+    url: '/files/CV-Tianle%20Chen-10.15.pdf'
     
   - title: "Publications"
     url: /publications/
