@@ -8,13 +8,5 @@ date: 2015-01-01
 location: "City, Country"
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
 
-Heading 1
-======
-
-Heading 2
-======
-
-Heading 3
-======
+![6K0A3092](https://github.com/user-attachments/assets/b66649db-c1cf-44d6-8612-d416f0b6b6ee)
