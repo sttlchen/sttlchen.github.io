@@ -8,20 +8,58 @@ redirect_from:
 ---
 
 {% include base_path %}
-## Calculus, Intro to Prob & Math Stat II, Elem Matrix & Linear Algebra
+# Academic Coursework Overview
 
-## Undergraduate Research - MXM, Theory of Single Variable Cal, Intro-Theory of Probability
+## **Mathematics**
 
-## Intro-Combinatorics, Analysis I, Modern Algebra, Complex Analysis, Intro-Stochastic Processes
+1. **Calculus & Analysis**
+   - MATH 221: Calculus & Analytic Geometry I
+   - MATH 222: Calculus & Analytic Geometry II
+   - MATH 234: Calculus--Functions of Several Variables
+   - MATH 310: Introduction to Probability & Mathematical Statistics II
+   - MATH 421: Theory of Single Variable Calculus
+   - MATH 521: Analysis I
+   - MATH 431: Introduction to the Theory of Probability
+   - MATH 475: Introduction to Combinatorics
+   - MATH 623: Complex Analysis
+   - MATH 632: Introduction to Stochastic Processes
 
-## R for Statistics I, Applied Regression Analysis, Introduction to Time Series
+2. **Algebra**
+   - MATH 340: Elementary Matrix & Linear Algebra
+   - MATH 541: Modern Algebra
 
-## Intro Applied Stats-Life Sci, Stat Expermntl Design, Machine Learning
+3. **Research**
+   - MATH 390: Undergraduate Research - MXM
 
-## Programming I, Data Sci Programming I, Mtrx Mthds in Machine Learnin,  General Physics, General Chemistry I&II, Animal Biology&Lab
+## **Statistics**
 
-**MATH221,222,234,310,340,390,421,431,475,521,541,623,632**
+1. **Applied Statistics & Programming**
+   - STAT 303: R for Statistics I
+   - STAT 333: Applied Regression Analysis
+   - STAT 349: Introduction to Time Series
+   - STAT 371: Introduction to Applied Statistics for Life Sciences
+   - STAT 424: Statistical Experimental Design
+   - STAT 451: Machine Learning
 
-**STAT303,333,349,371,424,451,COMP SCI200,220,532**  
+## **Computer Science**
 
-**PHYSICS103&104,CHEM103&104,ZOOLOGY101&102**  
+1. **Programming & Data Science**
+   - COMP SCI 200: Programming I
+   - COMP SCI 220: Data Science Programming I
+   - COMP SCI 532: Matrix Methods in Machine Learning
+
+## **Physical Sciences**
+
+1. **Physics**
+   - PHYSICS 103: General Physics I
+   - PHYSICS 104: General Physics II
+
+2. **Chemistry**
+   - CHEM 103: General Chemistry I
+   - CHEM 104: General Chemistry II
+
+## **Biological Sciences**
+
+1. **Biology**
+   - ZOOLOGY 101: Animal Biology
+   - ZOOLOGY 102: Animal Biology Laboratory
