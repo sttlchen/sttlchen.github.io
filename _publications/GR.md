@@ -1,9 +1,9 @@
 ---
-title: "Gender and Racial/Ethnic Disparities of Early-onset Colorectal Cancer by Anatomical Sites, Histological Types, and Disease Stages in the United States during 2001-2019"
+title: "Temporal trend in early-onset colorectal cancer incidence and case numbers among individuals aged 45-49 during 2001-2019: implications for the colonoscopy screening"
 collection: publications
 category: manuscripts
 permalink: /publication/GR
-date: 2024-10-03
-excerpt: 'This paper is pending publication.'
+date: 2024-10-15
+excerpt: 'This paper has been submitted to Cancer Control, and is pending publication.'
 ---
-This work is under the guidance of Prof. Shihua Wang from Ohio State University, see CV for details.
+My contribution to this work is under the guidance of Prof. Shihua Wang from Ohio State University, see CV for details.
