@@ -20,8 +20,8 @@ redirect_from:
 2. **Probability**
    - MATH/STAT 310: Introduction to Probability & Mathematical Statistics II
    - MATH/STAT 431: Introduction to the Theory of Probability
-   - MATH/STAT 475: Introduction to Combinatorics
-   - MATH/STAT 632: Introduction to Stochastic Processes
+   - MATH/STAT/COMP SCI 475: Introduction to Combinatorics
+   - MATH/STAT/ISYE/OTM 632: Introduction to Stochastic Processes
 
 3. **Algebra**
    - MATH 340: Elementary Matrix & Linear Algebra
