@@ -17,8 +17,8 @@ main:
   - title: "Courses"
     url: /cr/
     
-  - title: "Personal Statement"
-    url: /ps/
+  #- title: "Personal Statement"
+    #url: /ps/
         
   #- title: "Blog Posts"
     #url: /year-archive/
