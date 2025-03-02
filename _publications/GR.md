@@ -1,9 +1,9 @@
 ---
-title: "Temporal trend in early-onset colorectal cancer incidence and case numbers among individuals aged 45-49 during 2001-2019: implications for the colonoscopy screening"
+title: "Temporal trends in colorectal cancer incidence and case numbers among individuals aged 45-49 in the US during 2001-2019"
 collection: publications
 category: manuscripts
 permalink: /publication/GR
-date: 2024-10-15
-excerpt: 'This paper has been submitted to Cancer Control, and is pending publication.'
+date: 2025-03-02
+excerpt: 'This paper was accepted by Cancer Control on 2.28.2025, and is pending publication.'
 ---
-My contribution to this work is under the guidance of Prof. Shihua Wang from Ohio State University, see CV for details.
+My contribution to this work is under the guidance of Dr. Shihua Wang from Ohio State University, see CV for details.
