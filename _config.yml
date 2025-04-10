@@ -11,7 +11,7 @@ locale                   : "en-US"
 title                    : "Steven Tianle Chen / Home"
 title_separator          : "-"
 name                     : &name "Steven Tianle Chen <br> (陈天乐)"
-description              : &description "B.S. Math&Stats@UW-Madison"
+description              : &description "B.S. Math&Stats@UW-Madison <br> M.S. Statistical Sciences@Duke"
 url                      : https://sttlchen.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "sttlchen/sttlchen.github.io"
@@ -24,11 +24,11 @@ author:
   avatar           : "Grad Portrait.jpg"
   name             : "Steven Tianle Chen <br> (陈天乐)"
   pronouns         : "he/him/his"  
-  bio              : "B.S. Math&Stats@UW-Madison"
+  bio              : "B.S. Math&Stats@UW-Madison <br> M.S. Statistical Sciences@Duke"
   location         : "Madison, WI"
   employer         : "UW-Madison"
   uri              : # URL
-  email            : "tchen433@wisc.edu" 
+  email            : "chent7083@gmail.com" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
