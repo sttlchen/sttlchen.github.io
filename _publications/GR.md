@@ -1,9 +1,11 @@
 ---
-title: "Temporal trends in colorectal cancer incidence and case numbers among individuals aged 45-49 in the US during 2001-2019"
+title: "Temporal Trends in Colorectal Cancer Incidence and Case Numbers among Individuals Aged 45-49 in the US During 2001-2019"
 collection: publications
 category: manuscripts
 permalink: /publication/GR
-date: 2025-03-02
-excerpt: 'This paper was accepted by Cancer Control on 2.28.2025, and is pending publication.'
+date: 2025-04-10
+excerpt: 'This paper is published on Cancer Control. The DOI is 10.1177/10732748251327715'
 ---
-My contribution to this work is under the guidance of Dr. Shihua Wang from Ohio State University, see CV for details.
+<a href="https://journals.sagepub.com/doi/10.1177/10732748251327715">
+  Temporal Trends in Colorectal Cancer Incidence and Case Numbers among Individuals Aged 45-49 in the US During 2001-2019
+</a>
