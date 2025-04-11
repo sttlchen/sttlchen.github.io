@@ -23,12 +23,12 @@ author:
   # Biographic information
   avatar           : "Grad Portrait.jpg"
   name             : "Steven Tianle Chen <br> (陈天乐)"
-  pronouns         : "he/him/his"  
+  pronouns         : "He/Him/His"  
   bio              : "B.S. Math&Stats@UW-Madison <br> M.S. Statistical Science@Duke"
-  location         : "Madison, WI"
-  employer         : "UW-Madison"
+  location         : "Durham, NC"
+  employer         : "Duke"
   uri              : # URL
-  email            : "chent7083@gmail.com" 
+  email            : "tc434@duke.edu" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
