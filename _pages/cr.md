@@ -8,6 +8,7 @@ redirect_from:
 ---
 
 {% include base_path %}
+## **Undergrad Selected Courses Taken**
 ## **Mathematics**
 
 1. **Calculus & Analysis**
@@ -62,3 +63,13 @@ redirect_from:
 1. **Biology**
    - ZOOLOGY 101: Animal Biology
    - ZOOLOGY 102: Animal Biology Laboratory
+
+## **Courses Taken@Duke(In Progress)**
+## **Statistics**
+
+1. **Applied Statistics & Programming**
+   - STAT 532: Theory of Inference
+   - STAT 523L: Statistical Programming
+   - STAT 521L: Predictive Modelling
+   - STAT 581: Statistical Science Proseminar
+   - STAT 690: Special Topics in Statistics
