@@ -21,7 +21,7 @@ repository               : "sttlchen/sttlchen.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "Grad Portrait.jpg"
+  avatar           : "MSS.jpg"
   name             : "Steven Tianle Chen <br> (陈天乐)"
   pronouns         : "He/Him/His"  
   bio              : "B.S. Math&Stats@UW-Madison <br> M.S. Statistical Science@Duke"
