@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 {% include base_path %}
-## **Undergrad Selected Courses Taken**
+## **Courses Taken@UW-Madison**
 ## **Mathematics**
 
 1. **Calculus & Analysis**
@@ -69,7 +69,8 @@ redirect_from:
 
 1. **Applied Statistics & Programming**
    - STAT 532: Theory of Inference
-   - STAT 523L: Statistical Programming
+   - STAT 523L: Statistical Programming(*Waived)
    - STAT 521L: Predictive Modelling
    - STAT 581: Statistical Science Proseminar
-   - STAT 690: Special Topics in Statistics
+   - STAT 690: Deterministic Optimization
+   - STAT 690-1: SQL: Data Querying & Analysis
