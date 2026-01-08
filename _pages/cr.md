@@ -75,10 +75,11 @@ redirect_from:
    - STAT 690-1: SQL: Data Querying & Analysis
 
 *Spring 2026*
-   - COMPSCI 675D: Intro TO Deep Learning
+   - COMPSCI 675D: Intro to Deep Learning
    - STA 561D: Probablistic Machine Learning
    - STA 602L: Bayesian Statistical Modeling
    - STA 640: Causal Inference
    - STA 663L: Statistical Computing
+
 
 
