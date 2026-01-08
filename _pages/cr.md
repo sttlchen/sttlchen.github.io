@@ -73,10 +73,12 @@ redirect_from:
    - STAT 581: Statistical Science Proseminar
    - STAT 690: Deterministic Optimization
    - STAT 690-1: SQL: Data Querying & Analysis
+
 *Spring 2026*
    - COMPSCI 675D: Intro TO Deep Learning
    - STA 561D: Probablistic Machine Learning
    - STA 602L: Bayesian Statistical Modeling
    - STA 640: Causal Inference
    - STA 663L: Statistical Computing
+
 
