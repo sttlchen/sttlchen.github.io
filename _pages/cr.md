@@ -67,10 +67,16 @@ redirect_from:
 ## **Courses Taken@Duke(In Progress)**
 ## **Statistics**
 
-1. **Applied Statistics & Programming**
+1. Fall 2025
    - STAT 532: Theory of Inference
    - STAT 523L: Statistical Programming(*Waived)
    - STAT 521L: Predictive Modelling
    - STAT 581: Statistical Science Proseminar
    - STAT 690: Deterministic Optimization
    - STAT 690-1: SQL: Data Querying & Analysis
+2. Spring 2026
+   - COMPSCI 675D: Intro TO Deep Learning
+   - STA 561D: Probablistic Machine Learning
+   - STA 602L: Bayesian Statistical Modeling
+   - STA 640: Causal Inference
+   - STA 663L: Statistical Computing
