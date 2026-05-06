@@ -11,20 +11,8 @@ main:
   - title: "Publications"
     url: /publications/
 
-  #- title: "Teaching"
-    #url: /teaching/    
-    
   - title: "Courses"
     url: /cr/
     
-  #- title: "Personal Statement"
-    #url: /ps/
-        
-  #- title: "Blog Posts"
-    #url: /year-archive/
-    
   - title: "Talks"
-    url: /talks/       
-    
-  #- title: "Photos"
-    #url: /teaching/  
+    url: /talks/
