@@ -67,12 +67,12 @@ redirect_from:
 ## **Courses Taken@Duke(In Progress)**
 
 *Fall 2025*
-   - STAT 532: Theory of Inference
-   - STAT 523L: Statistical Programming(*Waived)
-   - STAT 521L: Predictive Modelling
-   - STAT 581: Statistical Science Proseminar
-   - STAT 690: Deterministic Optimization
-   - STAT 690-1: SQL: Data Querying & Analysis
+   - STA 532: Theory of Inference
+   - STA 523L: Statistical Programming(*Waived)
+   - STA 521L: Predictive Modelling
+   - STA 581: Statistical Science Proseminar
+   - STA 690: Deterministic Optimization
+   - STA 690-1: SQL: Data Querying & Analysis
 
 *Spring 2026*
    - COMPSCI 675D: Intro to Deep Learning
@@ -81,5 +81,5 @@ redirect_from:
    - STA 640: Causal Inference
    - STA 663L: Statistical Computing
 
-
+Updates for 2026-2027 incoming...
 
