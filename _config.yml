@@ -8,10 +8,10 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Steven Tianle Chen / Home"
+title                    : "Steven Tianle Chen"
 title_separator          : "-"
 name                     : &name "Steven Tianle Chen <br> (陈天乐)"
-description              : &description "B.S. Math&Stats@UW-Madison <br> M.S. Statistical Science@Duke"
+description              : &description "M.S. Statistical Science@Duke <br> B.S. Math&Stats@UW-Madison"
 url                      : https://sttlchen.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "sttlchen/sttlchen.github.io"
@@ -24,7 +24,7 @@ author:
   avatar           : "MSS.jpg"
   name             : "Steven Tianle Chen <br> (陈天乐)"
   pronouns         : "He/Him/His"  
-  bio              : "B.S. Math&Stats@UW-Madison <br> M.S. Statistical Science@Duke"
+  bio              : "M.S. Statistical Science@Duke <br> B.S. Math&Stats@UW-Madison"
   location         : "Durham, NC"
   employer         : "Duke University"
   uri              : # URL
@@ -137,9 +137,12 @@ og_image                 :  # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
+  type                   : Person
+  name                   : "Steven Tianle Chen"
   links: # An array of links to social media profiles
+    - "https://orcid.org/0009-0002-7682-7007"
+    - "https://github.com/sttlchen"
+    - "https://www.linkedin.com/in/steventlchen"
 
 
 # Analytics

@@ -4,15 +4,18 @@
 # links. Removing a link prevents it from showing in the header, but does not
 # prevent it from being included in the site.
 
-main:  
-  - title: "Resume"
+main:
+  - title: "CV"
     url: '/files/CV-Tianle%20Chen-25.10.pdf'
-    
+
   - title: "Publications"
     url: /publications/
 
-  - title: "Courses"
-    url: /cr/
-    
+  - title: "Projects"
+    url: /projects/
+
   - title: "Talks"
     url: /talks/
+
+  - title: "Courses"
+    url: /cr/
