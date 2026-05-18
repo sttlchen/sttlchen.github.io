@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Executive Summary</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Executive Summary</h1>
+</header>
+<h1 id="maia-interactive-chess-tutor---executive-summary">Maia
+Interactive Chess Tutor - Executive Summary</h1>
+<p><strong>STA 561 Final Project</strong><br />
+Zixuan Lin, Steven Chen, Xilong Li, Sicheng Zhang</p>
+<h2 id="the-problem">The problem</h2>
+<p>Modern chess software is extremely strong, but it is not built for
+people who are still learning how to think through a position. If a
+beginner asks a traditional engine for help, the answer is usually a
+number, a variation, and a level of confidence that can feel more
+intimidating than useful. That kind of output may be technically
+correct, but it often does not tell a student what to do next, what idea
+matters in the position, or why a move feels natural for one player and
+unnatural for another.</p>
+<p>Our project starts from a different question: what would a chess
+tutor look like if it were designed for improvement rather than perfect
+play? We wanted a system that could meet a learner at a chosen skill
+level, explain positions in plain language, and make trying ideas feel
+more like guided practice than being judged by a superhuman engine.</p>
+<h2 id="our-approach">Our approach</h2>
+<p>The final system is an interactive chess tutor launched from Jupyter
+but powered by a reusable Python app module. The user sees a
+drag-and-drop board, a target Elo slider, a side selector for starting a
+new game as White or Black, a FEN loader for custom positions, a visible
+practice-pool panel, a sample middlegame button, an
+<code>Evaluate Position</code> button, and a <code>Regret</code> button
+for rewinding the last full turn and trying another idea. The board also
+supports colored tactical arrows, and the coach panel explains those
+arrows directly in the interface.</p>
+<p>Under the hood, the project combines three main pieces:</p>
+<ul>
+<li>Maia-2, which predicts human-like moves at different rating levels
+rather than objective engine-best play</li>
+<li><code>python-chess</code>, which handles legal move generation,
+board logic, notation, and tactical structure</li>
+<li>a lightweight local web interface served from the notebook, so the
+tutor feels like a modern interactive app rather than a static notebook
+output</li>
+</ul>
+<p>This design lets the tutor do more than say whether a move was good
+or bad. It can ask whether the move was typical for the selected rating,
+whether the position improved, what tactical theme was present, and what
+kind of plan the student should think about next. The current version
+also switches cleanly between move-by-move coaching and position-level
+review, which matters because studying a position and playing through it
+are different learning tasks.</p>
+<p>The sample middlegame feature is part of that teaching design too.
+Instead of throwing the student into random legal positions, the app
+chooses from a curated practice pool matched to the selected Elo band.
+Lower bands emphasize cleaner classical structures; higher bands include
+sharper, more theory-heavy middlegames. As a result, the difficulty of
+the position, the recommendation style, and the bot behavior all move
+together.</p>
+<h2 id="what-the-finished-system-does">What the finished system
+does</h2>
+<p>The final version behaves like a real tutoring tool rather than a
+model demo. The user can begin from move one, paste in a custom FEN, or
+load a sample middlegame from the appropriate practice pool. They can
+ask for a static position evaluation before moving, make a move and
+receive move-level coaching, undo the last turn with
+<code>Regret</code>, and compare multiple candidate ideas from the same
+position. They can also switch sides and start a new game as Black, so
+the tutor is not limited to White-side opening practice.</p>
+<p>In our testing, those features worked together in a way that made the
+notebook feel genuinely usable:</p>
+<ul>
+<li>changing the Elo slider changed the recommendations, the practice
+pool, and the tone of the coaching</li>
+<li>invalid FEN input was handled cleanly with a short readable error
+instead of a crash</li>
+<li><code>Evaluate Position</code> worked both from sample middlegames
+and from an ordinary new game</li>
+<li>the <code>Regret</code> button made it practical to compare one
+plausible move against another without rebuilding the board state by
+hand</li>
+<li>tactical arrows appeared in positions where the tutor detected
+concrete themes such as attacks or exposed pieces, and those arrows
+matched the written explanation in the coach panel</li>
+<li>starting as Black worked properly, including side-to-move messaging
+and Black recommendations</li>
+</ul>
+<p>This last point is more important than it may first appear. Many
+classroom-style chess tools quietly assume the user is always White. Our
+final interface does not. It can open with the tutor playing White while
+the student practices Black and still explain the position in a readable
+way.</p>
+<h2 id="why-this-is-different-from-a-standard-chess-engine">Why this is
+different from a standard chess engine</h2>
+<p>The key difference is that the tutor does not treat strength as the
+only goal. A normal engine can tell the user the strongest move, but
+that does not mean it is giving the most educational response. Our tutor
+is designed to be legible. It describes whether a move is common or
+unusual for the chosen rating, names the general idea behind the move,
+offers a few alternatives, and closes with a next priority. In tactical
+positions it can also mark the board with arrows so the student can
+connect the words to the geometry of the position.</p>
+<p>That creates a different kind of learning experience. A student is
+not just being told that they lost half a pawn. They are being told
+something like: develop another piece, watch for hanging material, keep
+king safety in mind, or compare candidate moves before choosing the
+first active-looking idea. That is the kind of language a learner can
+actually carry into the next position.</p>
+<p>Our testing also showed an important nuance: the tutor is often
+strongest at the level of plan rather than at the level of one exact
+forced move. That is not a weakness in the project framing. If anything,
+it makes the tutor feel more like a real coach. It helps the user
+understand what kind of move belongs in the position, then lets them
+test whether a specific follow-up really works.</p>
+<h2 id="results-and-future-work">Results and future work</h2>
+<p>The finished project meets its main goal well. It lets a user set up
+a position and evaluate it at a chosen Elo, and it also lets a user play
+against a bot with running commentary. More importantly, it does those
+two things as one coherent system. The interface, the language, the
+sample pools, the undo behavior, and the tactical overlays all support
+the same teaching idea: chess feedback should be understandable,
+level-aware, and useful for improvement.</p>
+<p>There are still natural next steps. A longer user study would be
+needed to measure rating improvement directly. The tactical vocabulary
+could be expanded further, and session memory could eventually let the
+tutor adapt over time to a specific student. Even in its current form,
+though, the system already goes beyond a proof of concept. It is a
+complete interactive tutor with a clear educational point of view, a
+polished front end, and a concrete answer to the problem that motivated
+the project.</p>
+<hr />
+<p><em>This document is the executive summary for the project. The
+companion <code>faq.md</code> addresses skeptical-reader questions about
+how the tutor behaves in practice, and <code>appendix.md</code> gives
+the full technical description, reproduction steps, screenshots, and
+design rationale.</em></p>
+<footer style="margin-top:3em;padding-top:1em;border-top:1px solid #ccc;font-size:0.85em;color:#555;text-align:center;">
+  &copy; 2025 Tianle (Steven) Chen, Zixuan Lin, Xilong Li, and Sicheng Zhang. Displayed for portfolio purposes only. All rights reserved.
+</footer>
+</body>
+</html>

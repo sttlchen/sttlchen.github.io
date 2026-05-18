@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>FAQ</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">FAQ</h1>
+</header>
+<h1 id="faq---maia-interactive-chess-tutor">FAQ - Maia Interactive Chess
+Tutor</h1>
+<p>This FAQ is for the kind of reader who would not be satisfied with a
+quick demo and a few marketing sentences. It is based on the current
+final version of the project, the finished appendix, and the way the app
+actually behaved when we tested it through the notebook interface.</p>
+<h2 id="what-is-this-project-actually-trying-to-do">1. What is this
+project actually trying to do?</h2>
+<p>The project is trying to build a chess tutor, not just a strong chess
+bot. That idea sits behind almost every design choice in the final
+version. A normal engine is built to find the strongest move. Our tutor
+is built to say something useful to a student at a chosen rating level.
+So the goal is not only correctness. The goal is understandable,
+level-aware feedback that helps someone improve from the position they
+are actually facing.</p>
+<h2 id="are-we-using-stockfish-anywhere-in-the-actual-tutor">2. Are we
+using Stockfish anywhere in the actual tutor?</h2>
+<p>No. The tutor itself is built around Maia-2, not Stockfish. That
+distinction matters because Maia-2 is designed to model how humans play
+at different rating levels, while Stockfish is designed to play the
+strongest chess possible. We used engine comparisons in the report to
+show the difference in style, but the live system the user interacts
+with is Maia-based.</p>
+<h2
+id="why-is-maia-a-better-fit-for-this-project-than-a-normal-engine">3.
+Why is Maia a better fit for this project than a normal engine?</h2>
+<p>Because the project is about improvement, not just objective move
+quality. If the project only wanted the strongest move, then a standard
+engine would already solve that problem. But a tutor has to do more than
+solve the board. It has to respond in a way a student can learn from.
+Maia lets the project ask a different question: not only “what is strong
+here?” but also “what would a human at this level plausibly play here?”
+That makes the feedback feel more like coaching and less like judgment
+from a machine that is too strong to imitate.</p>
+<h2 id="does-the-elo-slider-really-change-anything-important">4. Does
+the Elo slider really change anything important?</h2>
+<p>Yes. It changes much more than a label. In the current version, the
+Elo setting affects at least four things at once:</p>
+<ul>
+<li>which moves the tutor treats as typical or unusual</li>
+<li>which candidate moves appear in the coach recommendations</li>
+<li>which sample middlegame pool is shown on the right side of the
+app</li>
+<li>how the bot replies when the user is actually playing a game</li>
+</ul>
+<p>We checked this directly. The same board position could receive a
+different set of candidate moves, a different tone of advice, and a
+different practice pool depending on whether the slider was closer to
+1200 or 1900.</p>
+<h2 id="what-does-human-likelihood-mean">5. What does “Human-Likelihood”
+mean?</h2>
+<p>It means: how likely is a player at the chosen rating to make that
+move?</p>
+<p>This is one of the most important ideas in the whole project.
+<code>Human-Likelihood</code> is not the same as “best move,” and it is
+not the same as “winning move.” In testing, we saw all three cases:</p>
+<ul>
+<li>a move that was unusual but still improved the position</li>
+<li>a move that looked standard and also improved the position</li>
+<li>a move that looked active but was both unusual and bad</li>
+</ul>
+<p>So the move panel is really giving three kinds of information at
+once:</p>
+<ul>
+<li>how typical the move is for that Elo</li>
+<li>whether the position got better or worse</li>
+<li>what lesson the user should take from it</li>
+</ul>
+<p>That separation is part of what makes the tutor more interesting than
+a single engine score.</p>
+<h2
+id="if-a-move-is-highly-unusual-does-that-automatically-mean-it-is-wrong">6.
+If a move is “highly unusual,” does that automatically mean it is
+wrong?</h2>
+<p>No. It only means Maia does not think players at that rating choose
+it very often. The move can still be playable, and sometimes it can even
+improve the position. We saw that in testing. The tutor is careful about
+this distinction, which is one of the strengths of the project. It does
+not flatten everything into one judgment word.</p>
+<h2
+id="then-what-should-a-user-focus-on-first-human-likelihood-or-win-probability">7.
+Then what should a user focus on first: human-likelihood or win
+probability?</h2>
+<p>A practical way to read the panel is this:</p>
+<ul>
+<li><code>Human-Likelihood</code> tells you whether the move fits the
+usual habits of players at that level.</li>
+<li><code>Win Probability</code> tells you whether the resulting
+position looks better or worse inside the tutor’s evaluation
+pipeline.</li>
+<li>the explanation text tells you what idea actually matters.</li>
+</ul>
+<p>If those signals all point the same way, the move is usually easy to
+trust. If they split, the explanation becomes the most important part.
+The numbers help, but the real educational value is in the
+interpretation.</p>
+<h2
+id="what-is-the-difference-between-making-a-move-and-clicking-evaluate-position">8.
+What is the difference between making a move and clicking “Evaluate
+Position”?</h2>
+<p>They are related, but they are not doing the same job.</p>
+<p>Making a move gives move-level coaching. The tutor reacts to the
+exact move that was played. It tells the user how typical that move was,
+whether the position improved or worsened, what tactical theme was
+detected, and what next priority to keep in mind.</p>
+<p><code>Evaluate Position</code> gives position-level coaching. It
+treats the current board as a study position and answers a different
+question: who is to move, what side you are playing, what candidate
+moves make sense here, and what kind of middlegame or opening plan this
+position is about.</p>
+<p>This difference showed up clearly in our testing. We used
+<code>Evaluate Position</code> from:</p>
+<ul>
+<li>a completely new game</li>
+<li>a sample middlegame</li>
+<li>a custom FEN position</li>
+<li>the middle of an already-running line</li>
+</ul>
+<p>In all four cases, it behaved like a planning tool rather than a move
+grader.</p>
+<h2
+id="can-the-app-be-used-from-move-one-or-is-it-mainly-a-middlegame-tool">9.
+Can the app be used from move one, or is it mainly a middlegame
+tool?</h2>
+<p>It can definitely be used from move one. Starting from a new game,
+the tutor gave sensible opening-stage guidance such as developing
+pieces, supporting the center, and keeping king safety in mind. Once a
+move was played, the panel switched naturally into move-by-move
+coaching.</p>
+<p>So the sample middlegames are important, but they are not the only
+way the app works. The project supports both:</p>
+<ul>
+<li>opening-stage tutoring from a fresh game</li>
+<li>position-based study from a selected or pasted middlegame</li>
+</ul>
+<h2 id="what-is-fen-and-why-does-the-app-use-it-so-much">10. What is
+FEN, and why does the app use it so much?</h2>
+<p>FEN is a compact text way to describe a chess position. It matters
+here because the whole tutor is built around the idea that a player
+should be able to stop at a specific board state and ask, “What should I
+be thinking about here?” The FEN box is what makes that possible. A user
+can paste in a position from their own game, from a class example, or
+from the app’s own sample pool and study it immediately.</p>
+<p>That feature is not a side detail. It is one of the main reasons the
+tutor feels useful beyond just playing a full game from move one.</p>
+<h2 id="what-happens-if-the-user-pastes-a-bad-fen">11. What happens if
+the user pastes a bad FEN?</h2>
+<p>The app handles that case cleanly. When we tested an invalid string,
+the app did not crash and did not dump a notebook traceback into the
+interface. It returned a short readable message saying that the FEN
+could not be parsed. That is the right behavior for a student-facing
+tool.</p>
+<h2
+id="why-did-load-sample-midgame-and-load-fen-sometimes-seem-to-give-the-same-result">12.
+Why did “Load Sample Midgame” and “Load FEN” sometimes seem to give the
+same result?</h2>
+<p>Because once a sample middlegame is loaded, its FEN is sitting in the
+input box. If the user then clicks <code>Load FEN</code> without
+changing anything, they are just reloading the exact same position. That
+is expected. The two buttons are not duplicates, though:</p>
+<ul>
+<li><code>Load Sample Midgame</code> chooses a built-in position from
+the current practice pool</li>
+<li><code>Load FEN</code> loads whatever exact position the user
+currently has in the text field</li>
+</ul>
+<p>So they can coincide, but they are still serving different
+purposes.</p>
+<h2 id="is-there-a-true-random-fen-generator-in-the-final-app">13. Is
+there a true random FEN generator in the final app?</h2>
+<p>No, not in the broad sense. The app does not generate arbitrary legal
+chess positions. Instead, it gives the user curated sample middlegames.
+That is a good decision for this project. Truly random positions would
+often be strange, unrealistic, or pedagogically useless. The current
+design is narrower, but much more defensible as a tutoring tool.</p>
+<h2
+id="can-the-tutor-handle-black-properly-or-is-it-basically-a-white-side-tool">14.
+Can the tutor handle Black properly, or is it basically a White-side
+tool?</h2>
+<p>It can handle Black properly. In the final version, the user can
+start a new game as Black, and the tutor will open as White. The coach
+panel then switches its wording so the user is clearly told they are
+playing Black from that position. We checked this directly, and the
+recommendations still made sense from Black’s side.</p>
+<p>That helps the app feel complete. It is not only a White-side opening
+sandbox.</p>
+<h2 id="what-do-the-colored-arrows-mean">15. What do the colored arrows
+mean?</h2>
+<p>The arrows are visual tactical hints. The app explains the legend
+right in the coach panel: blue attack, green check, orange hanging
+piece, red king danger. They are not decorative. They are tied to the
+tutor’s tactical detectors, so when the panel says a move uncovered an
+attack or left something hanging, the board can also show where that
+idea lives geometrically.</p>
+<p>We saw this directly in the final interface. When a move created a
+tactical theme, the arrow overlay appeared and matched the panel text.
+That makes the app much easier to read than a pure text-only tutor.</p>
+<h2 id="does-the-tutor-only-like-quiet-classical-looking-moves">16. Does
+the tutor only like quiet, classical-looking moves?</h2>
+<p>No. The tutor is not simply biased toward passive chess. In our
+testing, active moves sometimes increased the win-probability estimate
+and received positive coaching. But the app also punished random-looking
+aggression when it lacked a clear purpose. That feels believable. The
+tutor is not saying “never attack.” It is saying that active ideas
+should still make sense in the position.</p>
+<p>That is the kind of distinction a real human coach would try to
+make.</p>
+<h2
+id="if-i-do-not-know-which-recommended-move-to-try-first-what-should-i-do">17.
+If I do not know which recommended move to try first, what should I
+do?</h2>
+<p>The best rule is: try the move whose purpose you can explain most
+clearly.</p>
+<p>If one candidate obviously develops a piece, improves king safety, or
+supports the center, that is usually the best first move to test. If
+another move is sharper and harder to understand, it often makes sense
+to compare it second.</p>
+<p>This is also where the current app becomes genuinely useful. Because
+it has <code>Regret</code>, the user does not have to guess once and
+live with it. They can:</p>
+<ol type="1">
+<li>evaluate the position</li>
+<li>try one recommendation</li>
+<li>rewind the turn</li>
+<li>try another recommendation from the same board</li>
+</ol>
+<p>That made a real difference in our testing.</p>
+<h2
+id="if-i-follow-the-panels-recommendation-should-i-expect-the-win-probability-to-go-up-every-time">18.
+If I follow the panel’s recommendation, should I expect the win
+probability to go up every time?</h2>
+<p>Not every single time. The safest way to say it is this: following
+the message usually helps at the level of plan, but not every suggested
+move is guaranteed to raise the exact numeric estimate on the next
+line.</p>
+<p>That sounds subtle, but it actually fits the project well. The tutor
+is usually most convincing when it tells the user what kind of move
+belongs in the position. Then the move-by-move panel shows whether a
+particular follow-up really held together. In our testing, some
+recommended moves worked beautifully, while others felt more like
+sensible candidates than absolute commands.</p>
+<p>That does not make the system incoherent. It makes it feel more like
+coaching than oracle behavior.</p>
+<h2 id="what-does-the-regret-button-actually-do">19. What does the
+“Regret” button actually do?</h2>
+<p>It rewinds the last full turn so the user can compare another move
+from the same position. In practice, that means the app restores the
+board and the coach panel to the earlier branch, then tells the user to
+choose a different move from that position.</p>
+<p>We used this a lot in testing, and it became one of the most useful
+features in the final version. It turns the app from a one-path
+demonstration into a comparison tool. That matters because chess
+improvement often comes from comparing two plausible ideas, not just
+seeing one answer once.</p>
+<h2
+id="what-makes-this-feel-like-a-complete-tutor-instead-of-a-model-demo">20.
+What makes this feel like a complete tutor instead of a model demo?</h2>
+<p>The final system supports several learning workflows inside one
+interface:</p>
+<ul>
+<li>starting a new game</li>
+<li>starting as White or Black</li>
+<li>loading a custom FEN</li>
+<li>loading an Elo-matched sample middlegame</li>
+<li>evaluating a position without moving</li>
+<li>making moves and getting move-by-move coaching</li>
+<li>rewinding the last turn with <code>Regret</code></li>
+<li>seeing tactical arrows on the board</li>
+<li>browsing the current practice pool for the selected Elo band</li>
+</ul>
+<p>That combination is what makes the project feel finished. It does not
+only show that a model can score moves. It gives the user a way to
+study, test, compare, and replay ideas.</p>
+<h2
+id="how-should-a-student-actually-use-the-app-if-their-real-goal-is-improvement">21.
+How should a student actually use the app if their real goal is
+improvement?</h2>
+<p>A good workflow is:</p>
+<ol type="1">
+<li>set the Elo close to your current level</li>
+<li>either start a fresh game or load a sample middlegame</li>
+<li>click <code>Evaluate Position</code> first to get the overall
+plan</li>
+<li>make a move and read the whole explanation, not just the first
+line</li>
+<li>if the result is confusing, use <code>Regret</code> and compare
+another candidate</li>
+</ol>
+<p>That way, the app becomes more than a move scorer. It becomes a
+structured way to ask, “What kind of move belongs here, and how does
+that compare to what I was about to do?”</p>
+<h2 id="what-is-the-strongest-reason-this-project-is-interesting">22.
+What is the strongest reason this project is interesting?</h2>
+<p>The strongest reason is that it changes the question from “What is
+the best move?” to “What kind of feedback would actually help this
+player improve?” Once you take that question seriously, the rest of the
+system starts to make sense: the Elo slider, the Maia model, the
+candidate moves, the tactical arrows, the practice pools, the Black-side
+support, and the regret feature are all serving the same teaching
+idea.</p>
+<p>That is why the project feels more ambitious than a normal notebook
+demo. It is not only about chess strength. It is about building a
+tutoring experience.</p>
+<h2 id="does-the-app-need-internet-every-time-it-runs">23. Does the app
+need internet every time it runs?</h2>
+<p>Not necessarily. The board UI assets are cached locally after the
+first successful launch. That means later launches can reuse the local
+copy instead of downloading the board resources again. The first launch
+still needs network access if the cache has not been created yet, but
+after that the notebook is more self-contained.</p>
+<footer style="margin-top:3em;padding-top:1em;border-top:1px solid #ccc;font-size:0.85em;color:#555;text-align:center;">
+  &copy; 2025 Tianle (Steven) Chen, Zixuan Lin, Xilong Li, and Sicheng Zhang. Displayed for portfolio purposes only. All rights reserved.
+</footer>
+</body>
+</html>

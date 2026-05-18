@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Technical Appendix</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Technical Appendix</h1>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#maia-interactive-chess-tutor-technical-appendix"
+id="toc-maia-interactive-chess-tutor-technical-appendix">Maia
+Interactive Chess Tutor — Technical Appendix</a>
+<ul>
+<li><a href="#how-to-reproduce" id="toc-how-to-reproduce">0. How to
+reproduce</a></li>
+<li><a href="#motivation" id="toc-motivation">1. Motivation</a></li>
+<li><a href="#system-overview" id="toc-system-overview">2. System
+Overview</a></li>
+<li><a
+href="#six-design-choices-that-make-the-tutor-friendlier-than-an-engine"
+id="toc-six-design-choices-that-make-the-tutor-friendlier-than-an-engine">3.
+Six design choices that make the tutor friendlier than an engine</a>
+<ul>
+<li><a href="#feedback-is-calibrated-to-the-students-elo"
+id="toc-feedback-is-calibrated-to-the-students-elo">3.1 Feedback is
+calibrated to the student’s Elo</a></li>
+<li><a href="#coaching-output-is-prose-not-a-centipawn-number"
+id="toc-coaching-output-is-prose-not-a-centipawn-number">3.2 Coaching
+output is prose, not a centipawn number</a></li>
+<li><a href="#tactics-are-explained-by-name-not-by-score-delta"
+id="toc-tactics-are-explained-by-name-not-by-score-delta">3.3 Tactics
+are explained by name, not by score delta</a></li>
+<li><a href="#the-sample-midgame-pool-is-curated-to-the-students-level"
+id="toc-the-sample-midgame-pool-is-curated-to-the-students-level">3.4
+The sample midgame pool is curated to the student’s level</a></li>
+<li><a
+href="#evaluate-position-produces-a-study-plan-not-an-evaluation-bar"
+id="toc-evaluate-position-produces-a-study-plan-not-an-evaluation-bar">3.5
+“Evaluate Position” produces a study plan, not an evaluation
+bar</a></li>
+<li><a href="#feedback-tone-scales-with-the-students-level"
+id="toc-feedback-tone-scales-with-the-students-level">3.6 Feedback tone
+scales with the student’s level</a></li>
+</ul></li>
+<li><a href="#anecdotal-walkthroughs" id="toc-anecdotal-walkthroughs">4.
+Anecdotal walkthroughs</a>
+<ul>
+<li><a href="#walkthrough-1-beginner-game-at-elo-1200"
+id="toc-walkthrough-1-beginner-game-at-elo-1200">4.1 Walkthrough 1 —
+Beginner game at Elo 1200</a></li>
+<li><a href="#walkthrough-2-advanced-sample-at-elo-1700"
+id="toc-walkthrough-2-advanced-sample-at-elo-1700">4.2 Walkthrough 2 —
+Advanced sample at Elo 1700</a></li>
+<li><a href="#position-evaluation-case-study"
+id="toc-position-evaluation-case-study">4.3 Position-evaluation case
+study</a></li>
+</ul></li>
+<li><a href="#limitations" id="toc-limitations">5. Limitations</a></li>
+<li><a href="#conclusion" id="toc-conclusion">6. Conclusion</a></li>
+<li><a href="#references" id="toc-references">References</a></li>
+<li><a href="#appendix-a-available-figure-assets"
+id="toc-appendix-a-available-figure-assets">Appendix A — Available
+figure assets</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="maia-interactive-chess-tutor-technical-appendix">Maia
+Interactive Chess Tutor — Technical Appendix</h1>
+<p><strong>STA 561 Final Project</strong> Zixuan Lin, Steven Chen,
+Xilong Li, Sicheng Zhang</p>
+<p>This document is the technical appendix required by the assignment.
+It contains the full system description, design rationale with
+screenshots, a reproduction guide, limitations, and anecdotal
+walkthroughs. The companion files are <code>summary.md</code> (two-page
+executive summary, no jargon) and <code>faq.md</code> (skeptical-reader
+FAQ). The interactive demo lives in the Jupyter notebook
+<code>561_final_p.ipynb</code>, with the reusable tutor logic now
+factored into <code>chess_tutor_app.py</code>.</p>
+<h2 id="how-to-reproduce">0. How to reproduce</h2>
+<p>Everything the system needs is checked into the repository except the
+Maia-2 checkpoint cache and the board UI asset cache, both of which are
+created locally on demand.</p>
+<p><strong>Repository:</strong> <a
+href="https://github.com/zixuan28/STA561_Chess_Tutor"
+class="uri">https://github.com/zixuan28/STA561_Chess_Tutor</a></p>
+<p><strong>Setup (macOS/Linux, Python ≥ 3.11):</strong></p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/zixuan28/STA561_Chess_Tutor</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> STA561_Chess_Tutor</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install <span class="at">-e</span> .         <span class="co"># reads pyproject.toml (chess, maia2, requests,</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>                         <span class="co"># numpy, torch, ipywidgets, jupyter)</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ex">jupyter</span> notebook 561_final_p.ipynb</span></code></pre></div>
+<p>Alternatively, with <code>uv</code> (the repo ships a
+<code>uv.lock</code>):</p>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> sync</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> run jupyter notebook 561_final_p.ipynb</span></code></pre></div>
+<p><strong>Run order inside the notebook:</strong> top to bottom. Kernel
+→ Restart &amp; Run All also works.</p>
+<ul>
+<li><strong>Cell 0</strong> — disables CUDA for portability so the
+notebook defaults to CPU.</li>
+<li><strong>Cell 1</strong> — imports the notebook-facing pieces from
+<code>chess_tutor_app.py</code>.</li>
+<li><strong>Cell 2</strong> — loads the Maia-2 <code>rapid</code>
+checkpoint on CPU. On first run, Maia-2 may populate a local
+<code>maia2_models/</code> cache.</li>
+<li><strong>Cell 3</strong> — exposes optional helpers for the Lichess
+and Chess.com REST APIs. A <code>LICHESS_TOKEN</code> environment
+variable is optional.</li>
+<li><strong>Cell 4</strong> — instantiates the <code>ChessTutor</code>
+core object.</li>
+<li><strong>Cell 5</strong> — starts the local HTTP server, serves the
+interactive <code>chessboard.js</code> page, and displays the IFrame. If
+the cell is rerun, the previous local server is shut down first.</li>
+</ul>
+<p><strong>Expected first-run artifacts:</strong> a
+<code>maia2_models/</code> directory holding the model cache, a
+<code>board_assets/</code> directory holding cached board UI assets, and
+a local HTTP server on a random free port hosting the interactive
+board.</p>
+<p><strong>Known requirements:</strong> the board UI now caches jQuery,
+<code>chessboard.js</code>, <code>chess.js</code>, CSS, and the piece
+images into <code>board_assets/</code> the first time the interactive
+board launches successfully. That first UI launch still needs outbound
+network access; after the cache is warmed, later launches can reuse the
+local copy.</p>
+<h2 id="motivation">1. Motivation</h2>
+<p>Modern chess engines (Stockfish, Leela) play at a level that dwarfs
+any human, but their output is not designed for someone who is still
+learning. Pointing Stockfish at a beginner’s game produces centipawn
+scores and principal variations that assume the student already
+understands positional evaluation, piece activity, and deep tactical
+calculation. That is exactly the audience that most needs a tutor, and
+exactly the audience least equipped to make use of raw engine
+output.</p>
+<p>The project description phrases the goal as a tutor that
+<em>maximizes a given player’s improvement</em> rather than one that
+hands out the “right” move. We took that literally: the tutor never
+prints a centipawn score. Instead, every piece of feedback is (a)
+grounded in a human-aligned move distribution at the student’s own Elo,
+and (b) translated into a short prose sentence the student can act
+on.</p>
+<p>This report collects qualitative evidence — sample outputs from the
+tutor next to what a bare chess engine would have said in the same
+position — to argue that the resulting experience is more useful for a
+beginner or intermediate player than plugging the same position into
+Stockfish.</p>
+<h2 id="system-overview">2. System Overview</h2>
+<p>The tutor runs from a single Jupyter notebook
+(<code>561_final_p.ipynb</code>), but the logic is now centralized in
+<code>chess_tutor_app.py</code> so it can be reused and tested outside
+notebook cells. It is built from three pieces:</p>
+<ul>
+<li><strong>Maia-2</strong> (Tang et al., 2024) — a unified
+imitation-learning model that predicts what a human at a specified Elo
+would play. We load the <code>rapid</code> variant on CPU at startup
+(cell 2).</li>
+<li><strong><code>python-chess</code></strong> — legality, move
+notation, attack maps, and the tactical heuristics that sit on top of
+Maia-2’s move distribution.</li>
+<li><strong>A local HTTP server + <code>chessboard.js</code>
+IFrame</strong> — a self-contained HTML page (served on a random
+localhost port, with cached JS/CSS inlined into the page and piece
+images embedded as base64 data URIs) that renders the board, an Elo
+slider (1100–1900 in 100-point steps), a FEN input, a sample-midgame
+picker, an “Evaluate Position” button, a visible practice-pool panel,
+tactical arrow overlays, and a live coach panel.</li>
+</ul>
+<p>The core object is <code>ChessTutor</code> (instantiated in cell 4,
+defined in <code>chess_tutor_app.py</code>). Its public surface has
+three entry points the UI calls into:</p>
+<ol type="1">
+<li><code>generate_feedback_payload(move)</code> — runs Maia-2 at the
+user’s Elo, attaches tactical detectors, and returns a short list of
+prose lines.</li>
+<li><code>generate_bot_move()</code> — samples the bot’s reply from
+Maia-2’s top-5 human-likely moves (weighted by probability), so the
+opponent blunders the way a human at that Elo blunders.</li>
+<li><code>evaluate_position_report()</code> — standalone position
+evaluator for the “Evaluate Position” button, satisfying the A+
+criterion from the assignment.</li>
+</ol>
+<p>All three return natural-language output. None of them return a
+centipawn number.</p>
+<h2
+id="six-design-choices-that-make-the-tutor-friendlier-than-an-engine">3.
+Six design choices that make the tutor friendlier than an engine</h2>
+<p>Each subsection pairs a feature of our system with what a bare chess
+engine would produce in the same situation.</p>
+<h3 id="feedback-is-calibrated-to-the-students-elo">3.1 Feedback is
+calibrated to the student’s Elo</h3>
+<p>Stockfish at any reasonable depth plays moves a beginner will never
+understand — long positional maneuvers, subtle prophylaxis, zero
+tactical gifts. Just as importantly, Stockfish’s <em>commentary</em>
+does not change with the student’s rating: it prints the same centipawn
+score whether the person at the board is 1000 or 2200.</p>
+<p>Our tutor routes every piece of feedback through Maia-2 at the
+student’s declared Elo, so both the bot’s own moves and the coach’s
+analysis of the student’s moves shift with the slider. To make the
+effect visible, the four figures below show the redesigned
+board-and-coach layout on practice positions drawn from the beginner
+pool (Figures 3.1a–b, Elo 1200) and the advanced pool (Figures 3.1c–d,
+Elo 1800). The same pawn advance <code>a4</code> appears in both bands
+and is scored in opposite directions. The Coach Panel header also shows
+the tutor’s tactical-arrow legend (blue attack, green check, orange
+hanging piece, red king danger), which the move-level figures draw on
+when a tactic is detected.</p>
+<p><strong>Figure 3.1a — Move analysis at Elo 1200.</strong> From a
+beginner-pool position, the student plays <code>a4</code>. Maia-2
+reports a human-likelihood of 2.5 % for a 1200-rated player (flagged as
+highly unusual) but a positive win-probability delta of +6.7 % (43.3 % →
+50.0 %). The commentary warns that “early pawn pushes can also create
+weaknesses,” lists the more typical human choices at this level
+(<code>Bb2, Ke1, c4</code>), and closes with the beginner-band reminder
+to check for checks, captures, and threats on every move. An engine in
+the same position would have reported a single centipawn score with no
+process language at all.</p>
+<figure>
+<img src="report_images/3_1_move_analysis_elo1200.png"
+alt="Move analysis at Elo 1200" />
+<figcaption aria-hidden="true">Move analysis at Elo 1200</figcaption>
+</figure>
+<p><strong>Figure 3.1b — Position evaluation at Elo 1200.</strong>
+Clicking <em>Evaluate Position</em> on the same board produces a
+structured study plan: side to move, three human-likely candidate moves
+(<code>Ke1, c4, c3</code>), a position-focus sentence calibrated to the
+beginner band (“finish development and use your pieces to keep the king
+area secure”), a qualitative balance assessment, and the recent move
+history. None of this output is a number, and every sentence is
+actionable without a database of engine lines.</p>
+<figure>
+<img src="report_images/3_1_evaluate_position_elo1200.png"
+alt="Evaluate Position output at Elo 1200" />
+<figcaption aria-hidden="true">Evaluate Position output at Elo
+1200</figcaption>
+</figure>
+<p><strong>Figure 3.1c — Move analysis at Elo 1800.</strong> In an
+advanced-pool position, the student plays the same pawn advance
+<code>a4</code>. The tutor now assigns it a human-likelihood of only 0.1
+% and, crucially, flips the win-probability delta negative (52.0 % →
+48.8 %, −3.2 %). The typical alternatives listed also shift upward in
+sophistication (<code>Bb2, e5, d3</code>), and the closing reminder is
+the advanced-band one — “think about piece coordination, weak squares,
+and whether the move creates long-term targets.” The contrast with
+Figure 3.1a is the cleanest evidence for the calibration claim: <em>the
+same move, rated at two different levels, receives opposite-signed
+win-probability deltas and qualitatively different reminders.</em></p>
+<figure>
+<img src="report_images/3_1_move_analysis_elo1800.png"
+alt="Move analysis at Elo 1800" />
+<figcaption aria-hidden="true">Move analysis at Elo 1800</figcaption>
+</figure>
+<p><strong>Figure 3.1d — Position evaluation at Elo 1800.</strong> The
+Evaluate Position output also tracks the band. Candidate moves shift
+from the beginner’s <code>Ke1, c4, c3</code> to
+<code>Bb2, Qf3, d3</code> — a fianchetto, an active queen sortie, and a
+central break that a club player is expected to calculate. The
+qualitative assessment sharpens in the opposite direction from what a
+naive reader might expect: where the beginner output called the position
+“roughly balanced,” the advanced output says “White should play
+carefully; the position is somewhat uncomfortable.” Higher Elo does not
+simply mean the tutor becomes more optimistic — it means the tutor
+raises the bar for what counts as comfortable.</p>
+<figure>
+<img src="report_images/3_1_evaluate_position_elo1800.png"
+alt="Evaluate Position output at Elo 1800" />
+<figcaption aria-hidden="true">Evaluate Position output at Elo
+1800</figcaption>
+</figure>
+<h3 id="coaching-output-is-prose-not-a-centipawn-number">3.2 Coaching
+output is prose, not a centipawn number</h3>
+<p>Figures 3.2a–b below show the same position analyzed by two different
+systems: our tutor at Elo 1200, and Stockfish 18 at depth 27. The
+position is an open-game middlegame after a speculative white knight
+sortie <code>4.Ng5</code> (the game reached it via a non-standard
+opening line — see the <em>Recent moves</em> row in the tutor panel).
+The side-by-side comparison is the cleanest single-page evidence for why
+a learner gets more out of our tutor than out of a bare engine.</p>
+<p><strong>Figure 3.2a — Tutor output on <code>4.Ng5</code>.</strong>
+The Coach Panel reports the move’s <em>Human-Likelihood</em> (6.2 % for
+a 1200-rated player, flagged as “highly unusual”), the <em>Win
+Probability</em> delta (43.7 % → 36.6 %, a drop of 7.1 points), a named
+tactical warning (“Caution: Your piece may be hanging. It lacks
+sufficient defense on this square.”), three more typical human
+alternatives (<code>d3, O-O, Qe2</code>), and a beginner-band process
+reminder to check for checks, captures, and threats. None of these
+outputs is a number in isolation; every line is written for a student to
+act on.</p>
+<figure>
+<img src="report_images/3_2_tutor.png"
+alt="Tutor coach panel on 4.Ng5" />
+<figcaption aria-hidden="true">Tutor coach panel on 4.Ng5</figcaption>
+</figure>
+<p><strong>Figure 3.2b — Stockfish output on the same position.</strong>
+Stockfish prints a single numeric evaluation of <strong>−4.4</strong>
+(black is dramatically better) and a 5-move principal variation in
+algebraic notation:
+<code>5. d4 e6 6. d5 exd5 7. Qxd5 Bb4+ 8. Nc3 Qe7+ 9. Be3 Ne4</code>.
+There is no commentary, no acknowledgement of the student’s rating
+level, and no pedagogical language at all.</p>
+<figure>
+<img src="report_images/3_2_stockfish.png"
+alt="Stockfish evaluation on the same position" />
+<figcaption aria-hidden="true">Stockfish evaluation on the same
+position</figcaption>
+</figure>
+<p>A beginner reading Figure 3.2b learns nothing actionable: the
+centipawn score and the algebraic PV both assume the reader already
+knows why those moves are critical. A beginner reading Figure 3.2a gets
+an explicit tactical diagnosis (“your piece may be hanging”), a
+behavioral comparison (“only 6.2 % of 1200-rated players would have
+chosen this”), three more typical alternatives by name, and a concrete
+process reminder tailored to their level. This is the qualitative
+difference the project set out to build.</p>
+<h3 id="tactics-are-explained-by-name-not-by-score-delta">3.3 Tactics
+are explained by name, not by score delta</h3>
+<p><code>ChessTutor</code> now has five dedicated tactic detectors
+(<code>chess_tutor_app.py</code>):</p>
+<ul>
+<li><code>_detect_pin_blunder</code> — fires if the moved piece was
+absolute-pinned to its own king, and draws a red arrow from the piece to
+the king.</li>
+<li><code>_detect_fork</code> — fires when the landing square attacks
+two or more enemy pieces that are either higher-value or undefended, and
+draws a blue arrow to each target.</li>
+<li><code>_detect_discovered_attack</code> — fires when a sliding piece
+behind the moved piece gains a new attack path.</li>
+<li><code>_detect_hanging_piece</code> — fires when the destination
+square has more attackers than defenders.</li>
+<li><code>_detect_check</code> — fires when the move gives check or
+checkmate.</li>
+</ul>
+<p>Each detector emits one short English sentence plus optional arrows.
+Stockfish, by contrast, reports <code>score cp -280</code> and expects
+the student to work out <em>why</em> the move was bad.</p>
+<p>Figures 3.3a–b show two of the detectors firing in isolated test
+positions. Both setups were loaded via the <em>Load FEN</em> input so
+the move and the detector response can be read off the Coach Panel
+directly.</p>
+<p><strong>Figure 3.3a — Pin detector.</strong> Starting from the
+position <code>4k3/8/8/q7/8/8/3B4/4K3 w - - 0 1</code> (white bishop on
+d2 absolute-pinned by the black queen on a5 through to the white king on
+e1), the student moves <code>Bd2–c3</code>. The detector fires with the
+message <em>“The piece you moved was pinned to your king, exposing a
+critical vulnerability,”</em> and draws a red arrow from the bishop’s
+new square to the white king to make the pin visible on the board.</p>
+<figure>
+<img src="report_images/3_3_pin.png" alt="Pin detector firing on Bc3" />
+<figcaption aria-hidden="true">Pin detector firing on Bc3</figcaption>
+</figure>
+<p><strong>Figure 3.3b — Fork detector.</strong> Starting from
+<code>8/6k1/8/2r5/3N4/8/8/4K3 w - - 0 1</code>, the student plays
+<code>Nd4–e6+</code>. The knight lands on a square that simultaneously
+attacks the undefended black rook on c5 and the black king on g7. The
+detector fires with <em>“Excellent vision. You have established a fork,
+creating overlapping threats,”</em> and draws blue arrows from the
+knight to both forked targets.</p>
+<figure>
+<img src="report_images/3_3_fork.png"
+alt="Fork detector firing on Ne6+" />
+<figcaption aria-hidden="true">Fork detector firing on Ne6+</figcaption>
+</figure>
+<p>These two detectors are shown because they are the most visually
+distinctive. The remaining three
+(<code>_detect_discovered_attack</code>,
+<code>_detect_hanging_piece</code>, <code>_detect_check</code>) behave
+the same way — a named English sentence plus an optional colored arrow —
+and their code paths are listed above.</p>
+<h3 id="the-sample-midgame-pool-is-curated-to-the-students-level">3.4
+The sample midgame pool is curated to the student’s level</h3>
+<p>Clicking <strong>Load Sample Midgame</strong> picks uniformly at
+random from a band-matched pool. The pools (<code>MIDGAME_POOLS</code>
+in <code>chess_tutor_app.py</code>) encode the pedagogy:</p>
+<ul>
+<li><strong>Beginner (Elo ≤ 1300):</strong> Italian Game, Scotch, Four
+Knights, Vienna, London. All classical openings where piece development
+is natural and ideas are interpretable.</li>
+<li><strong>Club (Elo 1400–1600):</strong> Ruy Lopez Closed, Queen’s
+Gambit Declined, Caro-Kann Classical, French, Slav. Positions where
+mainline strategy and long-term plans start to matter.</li>
+<li><strong>Advanced (Elo ≥ 1700):</strong> Najdorf, King’s Indian,
+Grünfeld, Nimzo-Indian, Catalan. Sharp, theory-heavy positions that
+reward deep preparation.</li>
+</ul>
+<p>A bare engine could “analyze anything,” but that is the wrong
+affordance. A beginner given a Najdorf position will learn almost
+nothing; the tutor refuses to put one in front of them. The pool panel
+above the board also lists the five current-band options with one-line
+summaries, so the student can see what they are about to practice.</p>
+<p>Figures 3.4a–c show the same board page at three Elo settings. Only
+the <em>Current Practice Pool</em> panel on the right changes: the
+Beginner band lists Italian Game, Scotch, Four Knights, Vienna, and
+London; the Club band lists Ruy Lopez Closed, Queen’s Gambit Declined,
+Caro-Kann Classical, French, and Slav; the Advanced band lists Sicilian
+Najdorf, King’s Indian Defense, Grünfeld, Nimzo-Indian, and Catalan. The
+Coach Panel also reports a “Target Elo updated” message each time the
+slider moves, confirming that the recommendation engine has switched
+bands.</p>
+<p><strong>Figure 3.4a — Practice pool at Elo 1200 (Beginner
+band).</strong></p>
+<figure>
+<img src="report_images/3_4_pool_elo1200.png"
+alt="Pool panel at Elo 1200" />
+<figcaption aria-hidden="true">Pool panel at Elo 1200</figcaption>
+</figure>
+<p><strong>Figure 3.4b — Practice pool at Elo 1500 (Club
+band).</strong></p>
+<figure>
+<img src="report_images/3_4_pool_elo1500.png"
+alt="Pool panel at Elo 1500" />
+<figcaption aria-hidden="true">Pool panel at Elo 1500</figcaption>
+</figure>
+<p><strong>Figure 3.4c — Practice pool at Elo 1800 (Advanced
+band).</strong></p>
+<figure>
+<img src="report_images/3_4_pool_elo1800.png"
+alt="Pool panel at Elo 1800" />
+<figcaption aria-hidden="true">Pool panel at Elo 1800</figcaption>
+</figure>
+<h3
+id="evaluate-position-produces-a-study-plan-not-an-evaluation-bar">3.5
+“Evaluate Position” produces a study plan, not an evaluation bar</h3>
+<p>The <strong>Evaluate Position</strong> button calls
+<code>evaluate_position_report()</code>. Instead of printing
+<code>+0.3</code> it walks through three things in prose:</p>
+<ol type="1">
+<li>Side to move, and which color the student is playing from this
+position.</li>
+<li>Up to three human-likely candidate moves at the student’s Elo (in
+SAN).</li>
+<li>A position-focus sentence chosen from four branches: <em>“finish
+development and castle”</em>, <em>“fight for central influence”</em>,
+<em>“coordinate your pieces and watch for tactics”</em>, or <em>“this is
+already a richer middlegame…”</em>.</li>
+</ol>
+<p>This is the feature that directly fulfils the A+ rubric bullet from
+the assignment: <em>“your system should allow the user to setup a
+position and have it evaluated by your teacher for a pre-specified
+ELO.”</em></p>
+<p>Figures 3.5a–b illustrate the feature on the same middlegame FEN
+evaluated at two different Elo bands. The candidate moves listed in
+<em>Coach recommendation</em> shift with the band, and the
+position-focus line changes in tone as well. This is the concrete
+evidence that the pre-specified Elo really flows through the evaluation
+pipeline.</p>
+<p><strong>Figure 3.5a — Same position, evaluated at Elo
+1200.</strong></p>
+<figure>
+<img src="report_images/3_5_evaluate_elo1200.png"
+alt="Evaluate Position at Elo 1200" />
+<figcaption aria-hidden="true">Evaluate Position at Elo
+1200</figcaption>
+</figure>
+<p><strong>Figure 3.5b — Same position, evaluated at Elo
+1800.</strong></p>
+<figure>
+<img src="report_images/3_5_evaluate_elo1800.png"
+alt="Evaluate Position at Elo 1800" />
+<figcaption aria-hidden="true">Evaluate Position at Elo
+1800</figcaption>
+</figure>
+<h3 id="feedback-tone-scales-with-the-students-level">3.6 Feedback tone
+scales with the student’s level</h3>
+<p><code>ChessTutor._elo_band()</code> maps Elo to <code>beginner</code>
+/ <code>club</code> / <code>advanced</code>, and
+<code>build_coaching_lines()</code> adjusts the final reminder line
+accordingly:</p>
+<ul>
+<li><strong>Beginner:</strong> <em>“Reminder: before every move, check
+checks, captures, and threats for both sides.”</em></li>
+<li><strong>Club:</strong> <em>“Reminder: compare two candidate moves
+before choosing the first active-looking move.”</em></li>
+<li><strong>Advanced:</strong> <em>“Reminder: think about piece
+coordination, weak squares, and whether the move creates long-term
+targets.”</em></li>
+</ul>
+<p>An engine has no notion of the student. It prints the same output to
+a beginner and to a grandmaster.</p>
+<p>Figures 3.6a–b show the same user move analyzed at two Elo bands. The
+Human-Likelihood percentage, the “typical alternatives” list, and the
+closing reminder all shift with the slider — the same move receives a
+different coaching frame depending on who the student is supposed to
+be.</p>
+<p><strong>Figure 3.6a — Move analysis at Elo 1200.</strong></p>
+<figure>
+<img src="report_images/3_6_move_elo1200.png"
+alt="Move analysis at Elo 1200" />
+<figcaption aria-hidden="true">Move analysis at Elo 1200</figcaption>
+</figure>
+<p><strong>Figure 3.6b — Move analysis at Elo 1800.</strong></p>
+<figure>
+<img src="report_images/3_6_move_elo1800.png"
+alt="Move analysis at Elo 1800" />
+<figcaption aria-hidden="true">Move analysis at Elo 1800</figcaption>
+</figure>
+<h2 id="anecdotal-walkthroughs">4. Anecdotal walkthroughs</h2>
+<p>This section records short observed sessions with the revised
+notebook. The goal is not to claim formal evaluation; it is to show what
+the tutor sounds like in practice, where it helps, and where its
+abstractions still look odd.</p>
+<p><em>Note on reproducibility:</em> the bot samples its reply from
+Maia-2’s top-5 human-likely moves (weighted by probability), so
+rerunning the same session may produce slightly different move orders
+and percentages. The tutor’s behavior and the qualitative conclusions
+below are stable across reruns.</p>
+<h3 id="walkthrough-1-beginner-game-at-elo-1200">4.1 Walkthrough 1 —
+Beginner game at Elo 1200</h3>
+<p><strong>Starting condition:</strong> new game, Elo slider at
+1200.</p>
+<p>Before any move, <code>Evaluate Position</code> produced:</p>
+<blockquote>
+<p>Position evaluation mode<br />
+Side to move: White. You are playing White from this position.<br />
+Coach recommendation: consider <code>Nf3, Nc3, Na3</code>.<br />
+Position focus: finish development, support the center, and keep king
+safety in mind.</p>
+</blockquote>
+<p>That opening recommendation is already revealing: the tutor is not
+trying to play “best chess” from move one. It is trying to stay inside
+Maia-2’s human distribution at the chosen Elo.</p>
+<p>The student then played <code>e4</code>. The coach panel said:</p>
+<blockquote>
+<p>Your move: <code>e4</code><br />
+Human-Likelihood (Elo 1200): <strong>4.0%</strong><br />
+This move is highly unusual for your target rating level.<br />
+Win Probability: <strong>40.8% → 71.1% (+30.3%)</strong><br />
+This fights for central space and can make development easier for the
+rest of your pieces.</p>
+</blockquote>
+<p>This is a good example of the tutor’s central idea. The move can be
+<em>strategically good</em> while still being <em>statistically
+unusual</em> for the chosen rating. That is exactly the distinction the
+project is trying to preserve instead of collapsing everything into one
+number.</p>
+<p>After Maia replied <code>Nc6</code>, the student played
+<code>Nf3</code>. The tutor responded:</p>
+<blockquote>
+<p>Your move: <code>Nf3</code><br />
+Human-Likelihood (Elo 1200): <strong>14.2%</strong><br />
+This move is somewhat uncommon for your target rating level.<br />
+Typical human alternatives: <code>Bb5, Bc4, Nc3</code>.<br />
+Reminder: before every move, check checks, captures, and threats for
+both sides.</p>
+</blockquote>
+<p>The important part is the reminder line. At the beginner band, the
+notebook is not trying to impress the user with deep strategy. It is
+reinforcing a simple thinking process.</p>
+<p>A third move, <code>Bc4</code>, produced a noticeably calmer
+response:</p>
+<blockquote>
+<p>Your move: <code>Bc4</code><br />
+Human-Likelihood (Elo 1200): <strong>31.3%</strong><br />
+This is a fairly standard human move for the chosen rating.<br />
+This develops a bishop and helps your pieces coordinate more
+naturally.</p>
+</blockquote>
+<p>The end-of-game summary over these three user moves reported an
+average human-likelihood of <strong>16.5%</strong>, exactly one
+“unusual” move, and identified <code>e4</code> as the largest positive
+swing by the tutor’s own win-probability metric.</p>
+<p><strong>What felt useful:</strong> the tutor gave the player a plan,
+then a process, then a next priority. A raw engine would have reduced
+the same opening to a number and an opaque principal variation.</p>
+<p><strong>What looked odd:</strong> Maia-2 assigning only
+<strong>4.0%</strong> to <code>1.e4</code> at Elo 1200 is a reminder
+that the system is not calibrated like a classical opening book. That
+does not break the coaching layer, but it does show why the notebook
+should be understood as a human-aligned tutor rather than an objective
+move oracle.</p>
+<h3 id="walkthrough-2-advanced-sample-at-elo-1700">4.2 Walkthrough 2 —
+Advanced sample at Elo 1700</h3>
+<p><strong>Starting condition:</strong> loaded sample position from the
+advanced pool, specifically the built-in Catalan middlegame FEN, with
+the slider at 1700.</p>
+<p>The initial position evaluation read:</p>
+<blockquote>
+<p>Position evaluation mode<br />
+Side to move: White. You are playing White from this position.<br />
+Coach recommendation: consider <code>Qc2, Ne5, Nc3</code>.<br />
+Position focus: finish development and use your pieces to keep the king
+area secure.<br />
+Assessment: White should play carefully; the position is somewhat
+uncomfortable.</p>
+</blockquote>
+<p>This tone is already different from the 1200 session. There is no
+beginner checklist. The tutor assumes the player can compare plans and
+work with a more abstract positional summary.</p>
+<p>The student then chose the top Maia move, <code>Qc2</code>. The tutor
+said:</p>
+<blockquote>
+<p>Your move: <code>Qc2</code><br />
+Human-Likelihood (Elo 1700): <strong>33.5%</strong><br />
+This is a fairly standard human move for the chosen rating.<br />
+Win Probability: <strong>53.1% → 51.8% (-1.3%)</strong><br />
+Reminder: think about piece coordination, weak squares, and whether the
+move creates long-term targets.</p>
+</blockquote>
+<p>After the bot replied <code>a6</code>, reevaluating the position
+produced a new set of candidate moves: <code>Qxc4, a4, e4</code>. That
+shift is exactly the kind of interaction the project wants. The tutor
+does not just emit one static recommendation; it updates the planning
+surface after each exchange.</p>
+<p><strong>What felt useful:</strong> the coaching language became more
+strategic rather than more verbose. The advanced band reminder is about
+weak squares and long-term targets, not just checks and captures.</p>
+<p><strong>What looked odd:</strong> the tutor said the move
+<code>Qc2</code> improved positional control while its Maia-based win
+probability dropped slightly. That disagreement is not a bug in the
+code; it comes from the project intentionally combining a learned
+human-aligned model with a separate heuristic evaluator. But it is still
+a real interpretation wrinkle for the user.</p>
+<h3 id="position-evaluation-case-study">4.3 Position-evaluation case
+study</h3>
+<p>For a reproducible position-review case study, we used the built-in
+Catalan sample FEN from the advanced pool:</p>
+<p><code>rnbq1rk1/ppp1bppp/4pn2/8/2pP4/5NP1/PP2PPBP/RNBQ1RK1 w - - 0 7</code></p>
+<p>At Elo 1700, <code>Evaluate Position</code> returned:</p>
+<blockquote>
+<p>Side to move: White. You are playing White from this position.<br />
+Coach recommendation: consider <code>Qc2, Ne5, Nc3</code>.<br />
+Position focus: finish development and use your pieces to keep the king
+area secure.<br />
+Assessment: White should play carefully; the position is somewhat
+uncomfortable.</p>
+</blockquote>
+<p>This is a strong example of the tutor behaving like a study aid
+instead of a black-box engine. The recommendation is not “White is
++0.2.” It is “here are three human-like plans, and here is the kind of
+middlegame you are in.” For a student trying to remember what to do in a
+Catalan structure, that framing is much easier to act on.</p>
+<p>At the same time, the case study also shows the system’s current
+ceiling. The tutor tells the user <em>what kind</em> of plan to look
+for, but it does not yet explain the deeper Catalan ideas in
+opening-specific language: pressure on the long diagonal, the c4 pawn,
+or the relation between queen development and piece activity. In that
+sense, the notebook succeeds as a general-purpose coach more than as a
+specialized opening explainer.</p>
+<h2 id="limitations">5. Limitations</h2>
+<ul>
+<li><strong>Maia-2 is capped at Elo 1900 (rapid model).</strong>
+Requests outside 1100–1900 are clamped. Students above 1900 see no
+further personalization, and students below 1100 are served the 1100
+distribution.</li>
+<li><strong>Tactic detectors are rule-based, not learned.</strong> They
+catch the four named motifs and nothing else. Zugzwang, trapped pieces,
+fortress positions, long-range strategic plans, and endgame technique
+are all outside their scope.</li>
+<li><strong>No engine ground truth.</strong> Because we do not
+cross-check Maia-2 against Stockfish, the tutor can call a move
+“reasonable” when it is actually a medium-term blunder, as long as
+humans at that Elo also make that blunder. This is a deliberate design
+choice (human-aligned over objectively correct), but it means the tutor
+is not a substitute for engine analysis when preparing against a
+specific opponent.</li>
+<li><strong>Single-session memory.</strong> The tutor tracks the last
+eight moves of the current game (<code>ChessTutor.history</code>) for
+the end-of-game summary, but nothing persists across notebook restarts.
+A longitudinal “your weak squares this week” feature is explicitly out
+of scope.</li>
+<li><strong>Board UI cache bootstrap.</strong> The interactive page now
+caches its JS/CSS dependencies and piece images locally after the first
+successful run, but the first launch still requires outbound network
+access unless <code>board_assets/</code> has already been warmed.</li>
+<li><strong>No large-scale user study.</strong> The project description
+rules this out, so evidence in this report is qualitative and anecdotal.
+That is the category the description asks for.</li>
+</ul>
+<h2 id="conclusion">6. Conclusion</h2>
+<p>The headline claim is narrow: a beginner running this notebook gets
+something more useful than a beginner running Stockfish on the same
+position. The mechanism is not model scale — Maia-2 is much smaller than
+Stockfish and plays weaker moves — it is alignment with the student. The
+bot plays at the student’s level, the commentary is prose, tactics are
+named, and the practice pool is curated. Everything the student sees is
+something they can act on at their current Elo, which is the rubric the
+assignment actually cares about.</p>
+<p>The gap between “strongest move” and “most useful move” is the gap
+this project is trying to close. The walkthroughs above are our evidence
+that, for this specific use case, a human-aligned imitation model plus a
+thin coaching layer closes it more effectively than a
+Grandmaster-strength engine ever could.</p>
+<h2 id="references">References</h2>
+<ul>
+<li>Tang, Z. et al. <em>Maia-2: A Unified Model for Human-AI Alignment
+in Chess.</em> NeurIPS 2024. <a
+href="https://arxiv.org/abs/2409.20553">arxiv.org/abs/2409.20553</a></li>
+<li>McIlroy-Young, R. et al. <em>Aligning Superhuman AI with Human
+Behavior: Chess as a Model System.</em> KDD 2020.</li>
+<li><code>python-chess</code> library. Niklas Fiekas. <a
+href="https://python-chess.readthedocs.io">python-chess.readthedocs.io</a></li>
+<li><code>chessboard.js</code> v1.0.0. Chris Oakman. <a
+href="https://chessboardjs.com">chessboardjs.com</a></li>
+</ul>
+<hr />
+<h2 id="appendix-a-available-figure-assets">Appendix A — Available
+figure assets</h2>
+<p>The repository includes the following screenshots used throughout
+§3:</p>
+<p>Section 3.1 (Feedback calibrated to Elo): -
+<code>report_images/3_1_move_analysis_elo1200.png</code> -
+<code>report_images/3_1_evaluate_position_elo1200.png</code> -
+<code>report_images/3_1_move_analysis_elo1800.png</code> -
+<code>report_images/3_1_evaluate_position_elo1800.png</code></p>
+<p>Section 3.2 (Coaching prose vs Stockfish centipawn output): -
+<code>report_images/3_2_tutor.png</code> -
+<code>report_images/3_2_stockfish.png</code></p>
+<p>Section 3.3 (Named tactics — detector screenshots): -
+<code>report_images/3_3_pin.png</code> -
+<code>report_images/3_3_fork.png</code></p>
+<p>Section 3.4 (Sample midgame pool across bands): -
+<code>report_images/3_4_pool_elo1200.png</code> -
+<code>report_images/3_4_pool_elo1500.png</code> -
+<code>report_images/3_4_pool_elo1800.png</code></p>
+<p>Section 3.5 (Evaluate Position at two Elos, same FEN): -
+<code>report_images/3_5_evaluate_elo1200.png</code> -
+<code>report_images/3_5_evaluate_elo1800.png</code></p>
+<p>Section 3.6 (Move analysis tone across levels, same FEN and move): -
+<code>report_images/3_6_move_elo1200.png</code> -
+<code>report_images/3_6_move_elo1800.png</code></p>
+<p>Any remaining UI states discussed in this appendix are reproducible
+directly from the notebook. The revised interactive board exposes the
+sample-pool panel and tactical arrows live in the IFrame, so additional
+screenshots can be captured from the local demo without extra
+tooling.</p>
+<footer style="margin-top:3em;padding-top:1em;border-top:1px solid #ccc;font-size:0.85em;color:#555;text-align:center;">
+  &copy; 2025 Tianle (Steven) Chen, Zixuan Lin, Xilong Li, and Sicheng Zhang. Displayed for portfolio purposes only. All rights reserved.
+</footer>
+</body>
+</html>
