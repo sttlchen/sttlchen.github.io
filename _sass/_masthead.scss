@@ -28,6 +28,14 @@
       max-width: $x-large;
     }
 
+    /* On mobile, switch to flex so the toggle sits beside the nav
+       instead of floating over it */
+    @include breakpoint(max-width $large) {
+      display: flex;
+      align-items: center;
+      padding: 0 1em;
+    }
+
     nav {
       z-index: 10;
     }
@@ -46,17 +54,29 @@
     clear: both;
     list-style-type: none;
   }
+
+  @include breakpoint(max-width $large) {
+    flex: 1;
+    min-width: 0;
+  }
 }
 
 .theme-toggle {
+  /* Desktop: absolute-positioned at top-right of the masthead */
   position: absolute;
   right: 1em;
   top: 50%;
   transform: translateY(-50%);
 
+  /* Mobile: flex item sitting to the right of the nav, no overlap possible */
   @include breakpoint(max-width $large) {
-    right: 4.5rem;
+    position: static;
+    transform: none;
+    flex-shrink: 0;
+    margin-left: 0.5rem;
+    align-self: center;
   }
+
   background: none;
   border: 1px solid $border-color;
   border-radius: 50%;

@@ -1,18 +1,49 @@
-/* Move CV to top of hamburger dropdown whenever the greedy nav updates */
-function pinCVFirst() {
-  var hidden = document.querySelector('.greedy-nav .hidden-links');
-  if (!hidden) return;
-  var items = hidden.querySelectorAll('li');
-  for (var i = 1; i < items.length; i++) {
+/* ── Mobile nav fix ─────────────────────────────────────────────────────────
+   Force ALL nav items into the hamburger dropdown on narrow screens and
+   keep CV pinned to the top of the list.
+   ───────────────────────────────────────────────────────────────────────── */
+
+function fixMobileNav() {
+  if (window.innerWidth >= 925) return;
+
+  var nav          = document.getElementById('site-nav');
+  if (!nav) return;
+
+  var visibleLinks = nav.querySelector('.visible-links');
+  var hiddenLinks  = nav.querySelector('.hidden-links');
+  var hamburger    = nav.querySelector('button');
+  if (!visibleLinks || !hiddenLinks) return;
+
+  // Move any items already in hidden-links back to visible first (reset greedy-nav state)
+  Array.from(hiddenLinks.querySelectorAll('li')).forEach(function (item) {
+    visibleLinks.appendChild(item);
+  });
+
+  // Now move every non-site-title item from visible → hidden, preserving nav order
+  Array.from(visibleLinks.querySelectorAll('li:not(.masthead__menu-item--lg)')).forEach(function (item) {
+    hiddenLinks.appendChild(item);
+  });
+
+  // Ensure the hamburger button is shown
+  if (hamburger) hamburger.classList.remove('hidden');
+
+  // Pin CV to the top of the dropdown
+  var items = hiddenLinks.querySelectorAll('li');
+  for (var i = 0; i < items.length; i++) {
     var a = items[i].querySelector('a');
     if (a && a.textContent.trim() === 'CV') {
-      hidden.insertBefore(items[i], hidden.firstChild);
+      if (i > 0) hiddenLinks.insertBefore(items[i], hiddenLinks.firstChild);
       break;
     }
   }
 }
-setTimeout(pinCVFirst, 150);
-window.addEventListener('resize', function () { setTimeout(pinCVFirst, 150); });
+
+// Run after greedy-nav has had time to initialise, and again on resize
+setTimeout(fixMobileNav, 200);
+window.addEventListener('resize', function () { setTimeout(fixMobileNav, 200); });
+
+
+/* ── Theme toggle ────────────────────────────────────────────────────────── */
 
 (function () {
   var btn  = document.getElementById('theme-toggle');
