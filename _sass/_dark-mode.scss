@@ -144,6 +144,19 @@
   /* Buttons */
   .btn { color: #e0e6f0; &:hover { color: #ffffff; } }
 
+  /* Follow button — btn--inverse uses white bg by default */
+  .btn--inverse {
+    background-color: #1f2937;
+    border-color: #30363d !important;
+    color: #c9d1d9 !important;
+
+    &:hover {
+      background-color: #30363d;
+      border-color: #5b8fc2 !important;
+      color: #ffffff !important;
+    }
+  }
+
   /* Notices */
   .notice,
   .notice--primary,

@@ -28,14 +28,6 @@
       max-width: $x-large;
     }
 
-    /* On mobile, switch to flex so the toggle sits beside the nav
-       instead of floating over it */
-    @include breakpoint(max-width $large) {
-      display: flex;
-      align-items: center;
-      padding: 0 1em;
-    }
-
     nav {
       z-index: 10;
     }
@@ -47,6 +39,7 @@
 }
 
 .masthead__menu {
+  position: relative; /* containing block for the theme toggle */
 
   ul {
     margin: 0;
@@ -54,27 +47,18 @@
     clear: both;
     list-style-type: none;
   }
-
-  @include breakpoint(max-width $large) {
-    flex: 1;
-    min-width: 0;
-  }
 }
 
 .theme-toggle {
-  /* Desktop: absolute-positioned at top-right of the masthead */
   position: absolute;
-  right: 1em;
+  right: 1em;      /* desktop: far right of the nav */
   top: 50%;
   transform: translateY(-50%);
 
-  /* Mobile: flex item sitting to the right of the nav, no overlap possible */
+  /* Mobile: step left of the hamburger button (hamburger sits at right:0, ~44px wide).
+     right:3.5rem puts the toggle's right edge ~53px from the nav edge, clear of the ham. */
   @include breakpoint(max-width $large) {
-    position: static;
-    transform: none;
-    flex-shrink: 0;
-    margin-left: 0.5rem;
-    align-self: center;
+    right: 3.5rem;
   }
 
   background: none;
