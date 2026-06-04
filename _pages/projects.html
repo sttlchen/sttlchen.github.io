@@ -1,0 +1,15 @@
+---
+layout: archive
+title: "Projects"
+permalink: /projects/
+author_profile: true
+---
+
+{% include base_path %}
+
+<p>Selected research and academic projects.</p>
+
+{% assign projects_sorted = site.projects | sort: 'date' | reverse %}
+{% for post in projects_sorted %}
+  {% include archive-single-project.html %}
+{% endfor %}

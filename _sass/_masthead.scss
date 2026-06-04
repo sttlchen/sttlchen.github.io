@@ -6,6 +6,7 @@
   position: fixed;
   background: white;
   border-bottom: 1px solid $border-color;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
   height: $masthead-height;
   top: 0;
   width: 100%;
@@ -19,6 +20,7 @@
   &__inner-wrap {
     @include container;
     @include clearfix;
+    position: relative;
     padding: 1em 1em 1em;
     font-family: $sans-serif-narrow;
 
@@ -43,6 +45,38 @@
     padding: 0;
     clear: both;
     list-style-type: none;
+  }
+}
+
+.theme-toggle {
+  position: absolute;
+  right: 1em;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: 1px solid $border-color;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $primary-color;
+  transition: $global-transition;
+  z-index: 30;
+
+  &:hover {
+    background: $lighter-gray;
+    border-color: $primary-color;
+    color: mix(#000, $primary-color, 20%);
+  }
+
+  i {
+    font-size: 13px;
+    line-height: 1;
+    pointer-events: none;
   }
 }
 

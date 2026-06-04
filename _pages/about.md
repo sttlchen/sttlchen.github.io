@@ -12,7 +12,7 @@ Hello!/Guten Tag!/你好！
 
 I am a Master of Statistical Science student at Duke University. I graduated from the University of Wisconsin–Madison in December 2024 with a B.S. in Mathematics and Statistics. My academic interests lie at the intersection of machine learning, deep learning, Bayesian statistics, and computational methodology.
 
-I plan to pursue doctoral study in statistics, machine learning, computational statistics, and related quantitative fields. I am especially interested in research that connects statistical learning methods with probabilistic modeling, uncertainty quantification, and reproducible computation. I am also actively seeking TA/RA opportunities. You can contact me by <a href="mailto:tc434@duke.edu">email</a>, and my Duke department page is available <a href="https://scholars.duke.edu/person/Steven.Chen">here</a>.
+I am actively seeking TA/RA opportunities. You can contact me by <a href="mailto:tc434@duke.edu">email</a>, and my Duke department page is available <a href="https://scholars.duke.edu/person/Steven.Chen">here</a>.
 
 ## Research Interests
 

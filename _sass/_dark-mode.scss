@@ -1,0 +1,217 @@
+/* ==========================================================================
+   DARK MODE — system preference + manual toggle via [data-theme] on <html>
+   ========================================================================== */
+
+@mixin dark-theme-rules {
+
+  body {
+    background-color: #0f1117;
+    color: #e0e6f0;
+  }
+
+  a {
+    color: #6fa8d6;
+    &:hover   { color: #93bfe0; }
+    &:visited { color: #5d90b8; }
+  }
+
+  h1, h2, h3, h4, h5, h6 { color: #e6edf3; }
+
+  hr { border-top-color: #30363d; }
+
+  blockquote {
+    border-left-color: #5b8fc2;
+    color: #8b949e;
+  }
+
+  p > code,
+  a > code,
+  li > code,
+  figcaption > code,
+  td > code {
+    background: #21262d;
+    border-color: #30363d;
+    color: #e0e6f0;
+  }
+
+  pre {
+    background: #21262d;
+    border: 1px solid #30363d;
+  }
+
+  /* Masthead */
+  .masthead {
+    background: #161b22;
+    border-bottom-color: #30363d;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  }
+
+  .masthead__menu-item a,
+  .masthead__menu-item--lg a {
+    color: #c9d1d9;
+    &:hover { color: #ffffff; }
+  }
+
+  .site-title,
+  .site-subtitle {
+    color: #e6edf3;
+    &:hover { color: #ffffff; }
+  }
+
+  /* Greedy nav */
+  .greedy-nav {
+    background: #161b22;
+    a { color: #c9d1d9; }
+
+    .hidden-links {
+      background: #1f2937;
+      border-color: #30363d;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+      a { color: #c9d1d9; &:hover { color: #ffffff; } }
+    }
+
+    .navicon,
+    .navicon::before,
+    .navicon::after { background: #c9d1d9; }
+  }
+
+  /* Sidebar */
+  .sidebar { background: #0f1117; }
+
+  .author__name { color: #e6edf3; }
+
+  .author__bio,
+  .author__pronouns,
+  .author__location,
+  .author__employer { color: #8b949e; }
+
+  .author__urls-wrapper button {
+    color: #c9d1d9;
+    border-color: #30363d;
+  }
+
+  .author__urls {
+    // No card background on desktop — it sits inline inside the sidebar
+    a { color: #c9d1d9; &:hover { color: #ffffff; } }
+  }
+
+  // Brand icons that are near-black become invisible on dark backgrounds
+  .social-icons {
+    .fa { color: #c9d1d9; }
+
+    .fa-github,
+    .fa-github-alt,
+    .fa-github-square { color: #c9d1d9; }
+  }
+
+  /* Page content */
+  .page__content {
+    h2 { border-bottom-color: #5b8fc2; }
+    a  { color: #6fa8d6; &:hover { color: #93bfe0; } }
+  }
+
+  /* Archive cards */
+  .archive__item {
+    background: #161b22;
+    border-color: #30363d;
+    &:hover {
+      border-color: #5b8fc2;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+    }
+  }
+
+  .archive__item-title a  { color: #c9d1d9; &:hover { color: #ffffff; } }
+  .archive__item-excerpt  { color: #8b949e; }
+  .archive__subtitle      { color: #8b949e; border-bottom-color: #30363d; }
+
+  /* Tables */
+  table {
+    color: #e0e6f0;
+    th { background: #161b22; border-color: #30363d; }
+    td { border-color: #30363d; }
+    tr:nth-child(even) { background: #1a1d23; }
+  }
+
+  /* Footer */
+  .page__footer {
+    background-color: #161b22 !important;
+    color: #8b949e;
+    border-top: 1px solid #30363d;
+    a { color: #8b949e; &:hover { color: #c9d1d9; } }
+    .fas, .fab, .far, .fal { color: #8b949e; }
+  }
+
+  /* Buttons */
+  .btn { color: #e0e6f0; &:hover { color: #ffffff; } }
+
+  /* Notices */
+  .notice,
+  .notice--primary,
+  .notice--info,
+  .notice--warning,
+  .notice--danger,
+  .notice--success {
+    background: #1a1d23;
+    border-left-color: #5b8fc2;
+    color: #c9d1d9;
+  }
+
+  /* Taxonomy tags */
+  .page__taxonomy-item {
+    background: #1f2937;
+    border-color: #30363d;
+    color: #c9d1d9;
+  }
+
+  /* Pagination */
+  .pagination a {
+    color: #6fa8d6;
+    border-color: #30363d;
+    background: #161b22;
+    &:hover { background: #1f2937; color: #93bfe0; }
+  }
+
+  /* Theme toggle button in dark mode */
+  .theme-toggle {
+    border-color: #30363d;
+    color: #c9d1d9;
+    &:hover {
+      background: #1f2937;
+      border-color: #5b8fc2;
+      color: #ffffff;
+    }
+  }
+}
+
+
+/* ── Author URLs popup: card background only on mobile (it's inline on desktop) ── */
+@media screen and (prefers-color-scheme: dark) and (max-width: 1023px) {
+  html:not([data-theme="light"]) .author__urls {
+    background: #1f2937;
+    border-color: #30363d;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  html[data-theme="dark"] .author__urls {
+    background: #1f2937;
+    border-color: #30363d;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  }
+}
+
+
+/* ── Applies when system is dark AND user hasn't manually chosen light ── */
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme="light"]) {
+    background-color: #0f1117;
+    @include dark-theme-rules;
+  }
+}
+
+/* ── Applies when user manually chose dark (overrides system light) ── */
+html[data-theme="dark"] {
+  background-color: #0f1117;
+  @include dark-theme-rules;
+}
