@@ -80,26 +80,30 @@
   display: table-cell;
   vertical-align: top;
   width: 36px;
-  // set width only, for non-square avatars
-  // height: 36px;
 
   @include breakpoint($large) {
     display: block;
-    width: auto;
-    height: auto;
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12), 0 0 0 3px rgba(44, 71, 112, 0.18);
+    margin-bottom: 0.5em;
   }
 
   img {
     max-width: 175px;
     border-radius: 50%;
-    object-fit: cover;
-    object-position: center top;
-    aspect-ratio: 1;
 
     @include breakpoint($large) {
-      padding: 4px;
+      width: 100%;
+      height: 100%;
+      border-radius: 0;
+      object-fit: cover;
+      object-position: center top;
+      padding: 0;
       border: none;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12), 0 0 0 3px rgba(44, 71, 112, 0.18);
+      box-shadow: none;
     }
   }
 }
