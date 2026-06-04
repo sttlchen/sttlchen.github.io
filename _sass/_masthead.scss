@@ -49,23 +49,21 @@
 }
 
 .theme-toggle {
-  position: absolute;
-  right: 1em;
-  top: 50%;
-  transform: translateY(-50%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  margin-left: 0.4em;
+  width: 28px;
+  height: 28px;
+  padding: 0;
   background: none;
   border: 1px solid $border-color;
   border-radius: 50%;
-  width: 32px;
-  height: 32px;
-  padding: 0;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: $primary-color;
   transition: $global-transition;
-  z-index: 30;
+  flex-shrink: 0;
 
   &:hover {
     background: $lighter-gray;
@@ -74,7 +72,7 @@
   }
 
   i {
-    font-size: 13px;
+    font-size: 12px;
     line-height: 1;
     pointer-events: none;
   }
@@ -86,6 +84,8 @@
   white-space: nowrap;
 
   &--lg {
+    display: inline-flex !important;
+    align-items: center;
     padding-right: 2em;
     font-weight: 700;
   }
