@@ -55,7 +55,7 @@
   transform: translateY(-50%);
 
   @include breakpoint(max-width $large) {
-    right: 3.5rem;
+    right: 4.5rem;
   }
   background: none;
   border: 1px solid $border-color;
