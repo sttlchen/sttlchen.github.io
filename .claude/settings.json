@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(bundle exec *)",
+      "Bash(ruby --version)",
+      "Bash(gem --version)",
+      "Bash(jekyll --version)",
+      "Bash(bundler --version)",
+      "PowerShell(ruby --version)",
+      "PowerShell(bundle --version)",
+      "PowerShell(jekyll --version)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)"
+    ]
+  }
+}

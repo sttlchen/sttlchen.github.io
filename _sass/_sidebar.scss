@@ -85,7 +85,6 @@
     display: block;
     width: auto;
     height: auto;
-    /* padding gives the box-shadow room so the sidebar's overflow doesn't clip it */
     padding: 6px;
     margin-bottom: 0.5em;
   }
@@ -103,7 +102,10 @@
       object-position: center top;
       border: none;
       padding: 0;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12), 0 0 0 3px rgba(44, 71, 112, 0.18);
+      /* outline is not clipped by parent overflow-y:auto — ring always shows */
+      outline: 3px solid rgba(44, 71, 112, 0.22);
+      outline-offset: 2px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
     }
   }
 }

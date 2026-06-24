@@ -12,7 +12,7 @@ Hello!/Guten Tag!/你好！
 
 I am a Master of Statistical Science student at Duke University. I graduated from the University of Wisconsin–Madison in December 2024 with a B.S. in Mathematics and Statistics. My academic interests lie at the intersection of machine learning, deep learning, Bayesian statistics, and computational methodology.
 
-I am actively seeking TA/RA opportunities. You can contact me by <a href="mailto:tc434@duke.edu">email</a>, and my Duke department page is available <a href="https://scholars.duke.edu/person/Steven.Chen">here</a>.
+I am actively seeking TA/PhD opportunities. You can contact me by <a href="mailto:tc434@duke.edu">email</a>, and my Duke department page is available <a href="https://scholars.duke.edu/person/Steven.Chen">here</a>.
 
 ## Research Interests
 
@@ -24,6 +24,7 @@ I am actively seeking TA/RA opportunities. You can contact me by <a href="mailto
 
 ## Selected Updates
 
+- **Summer 2026:** Working on MothFlight project under the supervision of Prof. Vahid Tarokh and PhD student Junyi Liao.
 - **Spring 2026:** Continuing graduate coursework in Bayesian modeling, causal inference, statistical computing, deep learning, and probabilistic machine learning at Duke.
 - **April 2025:** Published a journal article in *Cancer Control* on colorectal cancer incidence trends among adults aged 45-49 in the United States.
 - **December 2024:** Completed the B.S. in Mathematics and Statistics at the University of Wisconsin–Madison.
