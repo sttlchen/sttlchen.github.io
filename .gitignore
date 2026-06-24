@@ -19,3 +19,7 @@ package-lock.json
 # Ignore local editor/project metadata
 .idea/
 .vscode/
+.claude/
+
+# Ignore Word source files (only PDFs go in the repo)
+files/*.docx
