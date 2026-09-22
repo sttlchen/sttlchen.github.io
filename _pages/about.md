@@ -26,7 +26,7 @@ I am actively seeking TA/PhD opportunities. You can contact me by <a href="mailt
 - Probability, combinatorics, and mathematical foundations of statistics
 
 ## Selected Updates
-
+- **Fall 2026:** Continuing graduate coursework in Theory & Alg Machine Learning, Hierarchical Models, High-Dimensional Statistics, serving as teaching assistant for STA402 Bayesian Modeling with Prof. David Dunson, and conducting Research Independent Study with Prof. Vahid Tarokh on mothflight.
 - **Summer 2026:** Working on MothFlight project under the supervision of Prof. Vahid Tarokh and PhD student Junyi Liao.
 - **Spring 2026:** Continuing graduate coursework in Bayesian modeling, causal inference, statistical computing, deep learning, and probabilistic machine learning at Duke.
 - **April 2025:** Published a journal article in *Cancer Control* on colorectal cancer incidence trends among adults aged 45-49 in the United States.
