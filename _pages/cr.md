@@ -26,6 +26,13 @@ author_profile: true
 - STA 640: Causal Inference
 - STA 663L: Statistical Computing
 
+**Fall 2026**
+
+- COMPSCI 671D: Theory & Alg Machine Learning
+- STA 610L: Hierarchical Models
+- STA 693: Research Independent Study
+- STA 915: High-Dimensional Statistics
+
 ## Undergraduate Coursework at UW–Madison
 
 ### Mathematics
